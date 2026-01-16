@@ -19,6 +19,12 @@
     --glass-bg: rgba(255, 255, 255, 0.1);
     --glass-border: rgba(255, 255, 255, 0.2);
     --transition-speed: 0.3s;
+
+    /* 组件用 */
+    --success-color: #10b981;
+    --warning-color: #f59e0b;
+    --error-color: #ef4444;
+    --info-color: #3b82f6;
 }
 
 [data-theme="light"] {
@@ -59,8 +65,23 @@
 
 body {
     background-color: var(--background-color) !important;
-    padding-top: 70px !important;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html, body {
+    height: auto; /* 确保不是 100% 固定高度 */
+    min-height: 100vh; /* 至少占满视口高度 */
+    overflow-x: hidden; /* 水平方向隐藏滚动条（如果不需要水平滚动） */
+    overflow-y: auto; /* 垂直方向自动显示滚动条 */
+    margin: 0; /* 重置默认 margin */
+    padding: 0; /* 重置默认 padding */
+}
+
+#app {
+    min-height: 100vh;
+
+    width: 100%;
+    padding: 0;
 }
 
 button {
@@ -74,6 +95,10 @@ button {
 
 
 h1, h2, h3, h4, h5, h6 {
+    color: var(--font-color);
+}
+
+p, a {
     color: var(--font-color);
 }
 

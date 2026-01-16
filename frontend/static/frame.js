@@ -123,13 +123,18 @@ async function loadScriptFromSrc(pageName){
     try {
         const pageModule = await import(`./js/${pageName}`);
         
+        let initFuncLst = [];
+
         // 模块必须导出一个 init 函数！！！
         if (typeof pageModule.init === 'function') {
-            pageModule.init();
+            initFuncLst.push(pageModule.init);
         } else {
             console.warn(`页面 ${pageName} 缺少 init 函数`);
         }
-        return pageModule.methods || {};
+        return  {
+            methods: pageModule.methods || {},
+            initFuncLst: initFuncLst,
+        };
     } catch (error) {
         console.error(`加载页面 ${pageName} 失败:`, error);
         return {};
@@ -180,7 +185,7 @@ function loadStyles(href) {
 async function clearOldPage(){
     window.dispatchEvent(new Event('pageUnload'));
 
-    window.pageCleanup?.(); // 调用页面清理函数
+    window.__pageCleanup?.(); // 调用页面清理函数
     if (Array.isArray(window.pageTimers)) {
         window.pageTimers.forEach(timerId => {
             clearTimeout(timerId);
@@ -190,6 +195,7 @@ async function clearOldPage(){
         clearTimeout(window.pageTimers);
         clearInterval(window.pageTimers);
     }
+
 
     window.pageCleanup = null;
     window.pageTimers = [];
@@ -206,6 +212,9 @@ async function clearOldPage(){
             script.remove();
         }
     });
+    document.body.style.overflow = '';
+    document.body.style.height = '';
+    document.documentElement.style.height = '';
 }
 
 async function loadPage() {
@@ -225,12 +234,16 @@ async function loadPage() {
         var methodsMap = defaultMethods;
         
         
+        let initFuncLst = [];
 
         if (data.config.scripts) {
             // 等待所有异步加载完成 ！！！！！
             const methodsPromises = data.config.scripts.map(scriptSrc => loadScriptFromSrc(scriptSrc));
 
-            const methodsArray = await Promise.all(methodsPromises);
+            const results = await Promise.all(methodsPromises);
+            const methodsArray = results.map(r => r.methods);
+            initFuncLst = results.flatMap(r => r.initFuncLst);
+
             methodsArray.forEach(_methods => {
                 Object.assign(methodsMap, _methods);
             });
@@ -273,6 +286,8 @@ async function loadPage() {
         renderPage(_data.html, data.config, methodsMap=methodsMap);
 
         window.dispatchEvent(new Event('pageLoaded'));
+
+        initFuncLst?.forEach(initFunc => initFunc());
     } catch (error) {
         
         console.error('加载页面失败:', error);

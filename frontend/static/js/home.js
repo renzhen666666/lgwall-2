@@ -240,23 +240,21 @@ export function init() {
 
     AOS.init({ duration: 1000 });
 
-    window.addEventListener('pageLoaded', function() {
-        const today = new Date();
-        const month = today.getFullYear() + '-' + (today.getMonth() + 1);
-        const hasVisited = localStorage.getItem('hasVisitedWall' + month);
-        if (!hasVisited) {
-            const noticeModal = new bootstrap.Modal(document.getElementById('notice'));
-            noticeModal.show();
-            localStorage.setItem('hasVisitedWall' + month, 'true');
-        }
-        loadHotMessage();
-        calculateUptime();
-        
-        window.pageTimers.push(setInterval(function() {
-            calculateUptime();
-        }, 1000));
-    });
+    const today = new Date();
+    const month = today.getFullYear() + '-' + (today.getMonth() + 1);
+    const hasVisited = localStorage.getItem('hasVisitedWall' + month);
+    if (!hasVisited) {
+        const noticeModal = new bootstrap.Modal(document.getElementById('notice'));
+        noticeModal.show();
+        localStorage.setItem('hasVisitedWall' + month, 'true');
+    }
+    loadHotMessage();
+    calculateUptime();
     
+    window.pageTimers.push(setInterval(function() {
+        calculateUptime();
+    }, 1000));
+
 
 
     document.querySelectorAll('.like-btn').forEach(button => {

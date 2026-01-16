@@ -75,3 +75,5 @@
 [2026-01-10 23:18:05,966] WARNING: 404 GET http://localhost:5410/api/static/files/464f7663-585e-4152-ae76-1b5e0d22d3ef_ClassIn_20240907091925.jpg [F:\code\minzhong_wall\longgaowall\longgaowall2\app_api.py:184]
 [2026-01-10 23:18:16,785] WARNING: 404 GET http://localhost:5410/api/static/files/464f7663-585e-4152-ae76-1b5e0d22d3ef_ClassIn_20240907091925.jpg [F:\code\minzhong_wall\longgaowall\longgaowall2\app_api.py:184]
 [2026-01-16 22:09:56,332] WARNING: 404 GET http://192.168.1.4:5410/api/statictiny_files/id1_62b9abb1-5a2c-4ffb-99ca-48635f3df328_1768572596.3017926_avatar1_1.png [F:\code\minzhong_wall\longgaowall\longgaowall2\app_api.py:185]
+[2026-01-16 23:43:12,815] WARNING: 404 POST http://192.168.1.4:5410/api/api/apps [F:\code\minzhong_wall\longgaowall\longgaowall2\app_api.py:185]
+[2026-01-16 23:43:17,315] WARNING: 404 POST http://192.168.1.4:5410/api/api/apps [F:\code\minzhong_wall\longgaowall\longgaowall2\app_api.py:185]

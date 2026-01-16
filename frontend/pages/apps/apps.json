@@ -1,3 +1,5 @@
 {
-    "title": "app"
+    "title": "app",
+    "styles": ["apps.css"],
+    "scripts": ["apps.js"]
 }

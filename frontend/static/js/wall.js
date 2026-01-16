@@ -52,13 +52,17 @@ async function restoreScrollState() {
     } catch (e) {
         console.error('恢复滚动位置失败:', e);
     }
-    showToast('已恢复至上次浏览位置');
+    showToastCenter('', '已恢复至上次浏览位置');
 }
 
 
 
 async function loadMessages() {
+    console.log('isLoading:', isLoading, 'allMessagesLoaded:', allMessagesLoaded);
+    if(isLoading || allMessagesLoaded) return;
     console.log('loading messages');
+    
+
     isLoading = true;
     const loading = document.getElementById('loading');
     loading.style.display = 'block';
@@ -88,11 +92,10 @@ async function loadMessages() {
     });
 
     currentPage++;
-    isLoading = false;
-    loading.style.display = 'none';
-
-
-
+    setTimeout(() => {
+        isLoading = false;
+        loading.style.display = 'none';
+    }, 1000);
 }
 
 function createMessageElement(message) {
@@ -554,16 +557,6 @@ function addCommentForm(messageId, refer='', referId='') {
     container.appendChild(form);
 }
 
-async function flashMessage(text) {
-    const flashes = document.getElementById('flashes');
-    const flash = document.createElement('li');
-    flash.textContent = text;
-    flashes.appendChild(flash);
-    setTimeout(() => {
-        flashes.children[0].remove();
-    }, 5000);
-}
-
 
 
 
@@ -660,7 +653,7 @@ async function submitComment(messageId) {
     const files = form.querySelector('input[type="file"]').files;
 
     if (!commentText && !files) {
-        showToast('评论内容不能为空');
+        showToastBelow(`comment-form-${messageId}`, '评论内容不能为空');
         return;
     }
 
@@ -711,11 +704,11 @@ async function submitComment(messageId) {
                 messageItemRow.appendChild(NewCommentBox);
             }
         } else {
-            showToast(result.error || '评论失败，请稍后再试');
+            showToastBelow(`comment-form-${messageId}`, result.error || '评论失败，请稍后再试');
         }
     } catch (error) {
         console.error('Error:', error);
-        showToast('评论失败，请稍后再试');
+        showToastBelow(`comment-form-${messageId}`, '评论失败，请稍后再试');
     } finally {
         progressBarContainer.style.display = 'none';
         submitBtn.disabled = false;
@@ -730,7 +723,7 @@ async function handleFormSubmit() {
     const tags = formData.get('tags').trim();
     
     if (!text && files.length === 0) {
-        flashMessage('请输入内容或选择文件');
+        showToastBelow('text-input', '请输入内容或选择文件');
         return false;
     }
 
@@ -784,7 +777,7 @@ async function handleFormSubmit() {
             window.location.reload();
         }
     } catch (error) {
-        flashMessage(`上传失败: ${error.message}`);
+        showToastTopRight('', `上传失败: ${error.message}`, 'error');
     }
 
 }
@@ -926,12 +919,12 @@ function refreshMessage(id) {
                 messageItem.innerHTML = newMessageItem.innerHTML;
             } else {
             console.error(data)
-            showToast(data.error || '刷新失败，请稍后再试');
+            showToastTopRight('', data.error || '刷新失败，请稍后再试', 'warning');
             }
         })
         .catch(error => {
             console.error('Error:', error);
-            showToast('刷新失败，请稍后再试');
+            showToastTopRight('', '刷新失败，请稍后再试', 'warning');
         })
         .finally(() => {
             loading.remove();
@@ -942,27 +935,7 @@ function refreshMessage(id) {
 
 
 
-function showToast(text) {
-    const toast = document.createElement('div');
-    toast.className = 'toast align-items-center text-bg-primary border-0 position-fixed top-50 start-50 translate-middle m-0';
-    toast.setAttribute('role', 'alert');
-    toast.setAttribute('aria-live', 'assertive');
-    toast.setAttribute('aria-atomic', 'true');
 
-    const toastBody = document.createElement('div');
-    toastBody.className = 'd-flex';
-
-    const bodyContent = document.createElement('div');
-    bodyContent.className = 'toast-body';
-    bodyContent.textContent = text;
-
-    toastBody.appendChild(bodyContent);
-    toast.appendChild(toastBody);
-    document.body.appendChild(toast);
-    const bsToast = new bootstrap.Toast(toast, { delay: 2000 });
-    bsToast.show();
-    toast.addEventListener('hidden.bs.toast', () => toast.remove());
-}
 
 const BASE64_CHARS = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz_-';
 
@@ -987,9 +960,9 @@ async function shareMessage(id) {
     console.log(`https://r-z.top/w/${newId}`);
     try {
         await navigator.clipboard.writeText(`https://r-z.top/w/${newId}`);
-        showToast('已复制链接到剪贴板');
+        showToastTopRight('', '已复制链接到剪贴板', 'success');
     } catch (err) {
-        showToast('复制失败，请手动复制');
+        showToastTopRight('', '复制失败，请手动复制', 'warning');
     }
 }
 
@@ -1039,7 +1012,7 @@ function handleTagInput(event) {
     const suggestionsContainer = document.getElementById('tag-suggestions');
 
     if (value.length > 10) {
-        flashMessage('标签长度不能超过10个字符');
+        showToastBelow('tags-input', '标签长度不能超过10个字符');
         return;
     }
 
@@ -1233,9 +1206,15 @@ function addsuggestionTags(text) {
 }
 
 
-// 页面加载完成后的处理
-window.addEventListener('pageLoaded', async function() {
-    setTimeout(restoreScrollState, 100);
+
+/*
+function renderContent() {
+    const urlP = new URLSearchParams(window.location.search);
+}
+*/
+
+export async function init() {
+    console.log('wall.js init');
 
     refreshMessages();
     showSuggestionTags();
@@ -1246,10 +1225,12 @@ window.addEventListener('pageLoaded', async function() {
     await loadMessages();
     window.addEventListener('scroll', async function () {
         // 检测整个网页是否滚动到底部附近
-        if (window.innerHeight + window.scrollY >= document.body.scrollHeight - 50) {
+        if (window.innerHeight + window.scrollY  >= document.body.scrollHeight) {
             if(!isLoading && !allMessagesLoaded) loadMessages();
         }
     });
+
+    restoreScrollState
 
     let scrollTimer;
     window.addEventListener('scroll', function() {
@@ -1257,18 +1238,6 @@ window.addEventListener('pageLoaded', async function() {
         scrollTimer = setTimeout(saveScrollState, 100);
         window.pageTimers.push(scrollTimer);
     });
-});
-
-/*
-function renderContent() {
-    const urlP = new URLSearchParams(window.location.search);
-}
-*/
-
-export function init() {
-    console.log('wall.js init');
-
-
 
 }
 
