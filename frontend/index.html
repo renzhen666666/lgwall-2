@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/css/aos.css">
+        <script src="/js/bootstrap.bundle.min.js"></script>
+        <script src="/js/aos.js"></script>
+        <link rel="stylesheet" href="/css/main_style.css">
+        <title>加载中 . . .</title>
+    </head>
+    <body>
+        <section id="nav">
+
+        </section>
+
+        <section id="menu">
+
+        </section>
+
+        <main id="app" class="root">
+
+        </main>
+
+        <div class="modal fade" id="notice" tabindex="-1" aria-labelledby="noticeLabel" aria-hidden="true">
+            <div class="modal-dialog" style="max-height: 500px;overflow: auto;">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="noticeLabel">公告</h4>
+                    </div>
+                    <div class="modal-body" id="notice-content">
+                        <div class="text-center">
+                            <div class="spinner-border" role="status">
+                                <span class="visually-hidden">加载中...</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="fileModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen m-0 d-flex align-items-center justify-content-center">
+                <div class="modal-content bg-transparent border-0" 
+                    style="position: relative; width: 100%; height: 100%;">
+                    
+                    <!-- 点击区域关闭模态框 -->
+                    <div class="w-100 h-100 d-flex align-items-center justify-content-center"
+                        onclick="closeFileModal()"
+                        style="background-color: rgba(0,0,0,0.8); cursor: pointer;">
+
+                        <button class="btn btn-outline-light btn-circle btn-prev position-absolute start-0 top-50 translate-middle-y" 
+                                onclick="event.stopPropagation();prevFile(event)" 
+                                style="z-index: 1052;">
+                            <span class="bi bi-chevron-left" style="font-size: 2rem;">←</span>
+                        </button>
+
+                        <div id="modalContentContainer" class="d-flex align-items-center justify-content-center"
+                            style="max-width: 100%; max-height: 100%; z-index: 1051;">
+                            <img id="modalImage" 
+                                class="img-fluid" 
+                                style="max-width: 90vw; max-height: 85vh; object-fit: contain; display: none;"
+                                alt="预览图片">
+                            <video id="modalVideo"
+                                controls
+                                autoplay
+                                playsinline
+                                style="max-width: 90vw; max-height: 85vh; display: none;">
+                            </video>
+                            <audio id="modalAudio"
+                                controls
+                                autoplay
+                                style="width: 80%; display: none;">
+                            </audio>
+                            <div id="modalText" 
+                                class="text-white text-center p-4"
+                                style="display: none; max-width: 90vw; max-height: 85vh; overflow: auto;">
+                            </div>
+                        </div>
+
+                        <button class="btn btn-outline-light btn-circle btn-next position-absolute end-0 top-50 translate-middle-y"
+                                onclick="event.stopPropagation();nextFile(event)"
+                                style="z-index: 1052;">
+                            <span class="bi bi-chevron-right" style="font-size: 2rem;">→</span>
+                        </button>
+                    </div>
+                    
+                    <!-- 关闭按钮 -->
+                    <button type="button" 
+                            class="btn-close btn-close-white position-absolute top-0 end-0 m-3" 
+                            onclick="closeFileModal()"
+                            style="z-index: 1052; font-size: 2rem; filter: invert(1);">
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <script src="/config.js"></script>
+        <script src="/js/main.js"></script>
+        <script src="/frame.js"></script>
+    </body>
+</html>

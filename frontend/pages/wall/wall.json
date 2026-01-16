@@ -1,0 +1,9 @@
+{
+    "title": "wall",
+    "menu": {
+        "wallActive": "active"
+    },
+
+    "scripts": ["wall.js", "file.js"],
+    "styles": ["wall.css"]
+}
