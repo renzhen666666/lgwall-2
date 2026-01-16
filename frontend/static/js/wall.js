@@ -1,9 +1,10 @@
 const apiUrl = window.config.apiUrl;
 const staticUrl = apiUrl + '/static';
-let allMessages = [];
+
 let currentPage = 1;
 let pageSize = 15;
 console.log(`pagesize: ${pageSize}`);
+
 let isLoading = false;
 let allMessagesLoaded = false;
 
@@ -11,25 +12,9 @@ let uploadProgress = {};
 
 const CHUNK_SIZE = 25 * 1024 * 1024; // 20MB
 
-// 文件查看相关变量
-let currentFiles = [];
-let currentFileIndex = 0;
-
-const fileModal = new bootstrap.Modal(document.getElementById('fileModal'));
 
 
-window.addEventListener('scroll', async function () {
-    // 检测整个网页是否滚动到底部附近
-    if (window.innerHeight + window.scrollY >= document.body.scrollHeight - 50) {
-        await loadMessages();
-    }
-});
 
-let scrollTimer;
-window.addEventListener('scroll', function() {
-    clearTimeout(scrollTimer);
-    scrollTimer = setTimeout(saveScrollState, 100);
-});
 
 
 function saveScrollState() {
@@ -73,7 +58,7 @@ async function restoreScrollState() {
 
 
 async function loadMessages() {
-    if (isLoading || allMessagesLoaded) return;
+    console.log('loading messages');
     isLoading = true;
     const loading = document.getElementById('loading');
     loading.style.display = 'block';
@@ -91,7 +76,6 @@ async function loadMessages() {
     if (!data.data || data.data.length === 0) {
         allMessagesLoaded = true;
         loading.style.display = 'none';
-        isLoading = false;
         return;
     }
 
@@ -277,7 +261,7 @@ function createMessageElement(message) {
                 img.style.cursor = 'pointer';
                 img.addEventListener('click', function(e) {
                     e.stopPropagation();
-                    openFileViewer(message.files, index);
+                    openFileViewer(file, message.files, message.text.length > 20 ? message.text.substring(0, 20)+'...' : message.text );
                 });
                 attachmentsContainer.appendChild(img);
             } else if (['mp4', 'avi', 'mov', 'webm'].includes(ext)) {
@@ -286,7 +270,7 @@ function createMessageElement(message) {
                 videoContainer.style.cursor = 'pointer';
                 videoContainer.addEventListener('click', function(e) {
                     e.stopPropagation();
-                    openFileViewer(message.files, index);
+                    openFileViewer(file, message.files, message.text.length > 20 ? message.text.substring(0, 20)+'...' : message.text );
                 }); 
                 
                 const video = document.createElement('video');
@@ -320,7 +304,7 @@ function createMessageElement(message) {
                 fileLink.textContent = '📎 附件';
                 fileLink.addEventListener('click', function(e) {
                     e.stopPropagation();
-                    openFileViewer(message.files, index);
+                    openFileViewer(file, message.files, message.text.length > 20 ? message.text.substring(0, 20)+'...' : message.text );
                 });     
                 attachmentsContainer.appendChild(fileLink);
             }
@@ -411,8 +395,8 @@ function createCommentElement(comment, num, messageId) {
         
         comment.files.forEach((file, index) => {
             const ext = file.split('.').pop().toLowerCase();
-            const filePathTiny = `${staticUrl}tiny_files/${file}`;
-            const filePathFull = `${staticUrl}files/${file}`;
+            const filePathTiny = `${staticUrl}/tiny_files/${file}`;
+            const filePathFull = `${staticUrl}/files/${file}`;
             
             if (['png', 'jpg', 'jpeg', 'gif'].includes(ext)) {
                 const img = document.createElement('img');
@@ -423,7 +407,7 @@ function createCommentElement(comment, num, messageId) {
                 img.alt = '预览';
                 img.addEventListener('click', function(e) {
                     e.stopPropagation();
-                    openFileViewer(comment.files, index);
+                    openFileViewer(file, comment.files, comment.text.length > 20 ? comment.text.substring(0, 20)+'...' : comment.text );
                 });
                 attachmentsDiv.appendChild(img);
             } else if (['mp3', 'wav', 'aac', 'flac', 'm4a', 'mid'].includes(ext)) {
@@ -442,7 +426,7 @@ function createCommentElement(comment, num, messageId) {
                 videoContainer.className = 'video-container';
                 videoContainer.addEventListener('click', function(e) {
                     e.stopPropagation();
-                    openFileViewer(comment.files, index);
+                    openFileViewer(file, comment.files, comment.text.length > 20 ? comment.text.substring(0, 20)+'...' : comment.text );
                 });
                 
                 const video = document.createElement('video');
@@ -465,7 +449,7 @@ function createCommentElement(comment, num, messageId) {
                 fileLink.textContent = '点击下载';
                 fileLink.addEventListener('click', function(e) {
                     e.stopPropagation();
-                    openFileViewer(comment.files, index);
+                    openFileViewer(file, comment.files, comment.text.length > 20 ? comment.text.substring(0, 20)+'...' : comment.text );
                 }); 
                 attachmentsDiv.appendChild(fileLink);
             }
@@ -504,7 +488,10 @@ function addCommentForm(messageId, refer='', referId='') {
     // 创建表单元素
     const form = document.createElement('form');
     form.setAttribute('id', `comment-form-${messageId}`);
-    form.setAttribute('onsubmit', `event.preventDefault(); submitComment(${messageId});`);
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        submitComment(messageId);
+    });
     form.classList.add('comment-form');
 
     form.appendChild(referText);
@@ -955,28 +942,6 @@ function refreshMessage(id) {
 
 
 
-// 键盘导航
-document.addEventListener('keydown', function(event) {
-  if (!document.getElementById('fileModal').classList.contains('show')) return;
-  
-  switch(event.key) {
-    case 'ArrowLeft':
-      prevFile();
-      break;
-    case 'ArrowRight':
-      nextFile();
-      break;
-  }
-});
-
-// 模态框隐藏时暂停媒体
-document.getElementById('fileModal').addEventListener('hidden.bs.modal', function () {
-    const modalContent = document.getElementById('modalContent');
-    if (modalContent) {
-        modalContent.innerHTML = ``;
-    }
-});
-
 function showToast(text) {
     const toast = document.createElement('div');
     toast.className = 'toast align-items-center text-bg-primary border-0 position-fixed top-50 start-50 translate-middle m-0';
@@ -1269,15 +1234,30 @@ function addsuggestionTags(text) {
 
 
 // 页面加载完成后的处理
-window.addEventListener('pageLoaded', function() {
+window.addEventListener('pageLoaded', async function() {
     setTimeout(restoreScrollState, 100);
 
     refreshMessages();
     showSuggestionTags();
     getTags();
-    loadMessages();
-});
+    
 
+
+    await loadMessages();
+    window.addEventListener('scroll', async function () {
+        // 检测整个网页是否滚动到底部附近
+        if (window.innerHeight + window.scrollY >= document.body.scrollHeight - 50) {
+            if(!isLoading && !allMessagesLoaded) loadMessages();
+        }
+    });
+
+    let scrollTimer;
+    window.addEventListener('scroll', function() {
+        clearTimeout(scrollTimer);
+        scrollTimer = setTimeout(saveScrollState, 100);
+        window.pageTimers.push(scrollTimer);
+    });
+});
 
 /*
 function renderContent() {
@@ -1287,6 +1267,8 @@ function renderContent() {
 
 export function init() {
     console.log('wall.js init');
+
+
 
 }
 

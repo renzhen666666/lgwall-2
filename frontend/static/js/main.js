@@ -5,8 +5,7 @@ const CACHE_DURATION = 5 * 60 * 1000;
 const apiUrl = window.config.apiUrl;
 const staticUrl = apiUrl + '/static';
 
-let currentFiles = [];
-let currentFileIndex = 0;
+
 
 async function loadNoticeContent() {
     const now = Date.now();
@@ -149,142 +148,20 @@ function validateFileType(files) {
     return true;
   }
 
-function showModal(imageSrc) {
-    const modal = document.getElementById('Modal');
-    const modalImage = document.getElementById('modalImage');
-    modalImage.src = imageSrc;
-    modal.style.display = 'flex';
-}
 
 
 
-// 打开文件查看模态框
-function openFileViewer(files, startIndex) {
-    currentFiles = files;
-    currentFileIndex = startIndex;
-    updateModalContent();
-    
-    // 显示模态框
-    const modalElement = document.getElementById('fileModal');
-    const modal = new bootstrap.Modal(modalElement);
-    modal.show();
-    
-    // 显示/隐藏导航按钮
-    document.querySelector('.btn-prev').style.display = files.length > 1 ? 'block' : 'none';
-    document.querySelector('.btn-next').style.display = files.length > 1 ? 'block' : 'none';
-}
 
-
-
-function updateModalContent() {
-    const contentContainer = document.getElementById('modalContentContainer');
-    const modalImage = document.getElementById('modalImage');
-    const modalVideo = document.getElementById('modalVideo');
-    const modalAudio = document.getElementById('modalAudio');
-    const modalText = document.getElementById('modalText');
-    
-    // 隐藏所有内容元素
-    modalImage.style.display = 'none';
-    modalVideo.style.display = 'none';
-    modalAudio.style.display = 'none';
-    modalText.style.display = 'none';
-    
-    const file = currentFiles[currentFileIndex];
-    const ext = file.split('.').pop().toLowerCase();
-    const filePath = `${staticUrl}/files/${file}`;
-    
-    // 根据文件类型显示相应内容
-    if (['png', 'jpg', 'jpeg', 'gif'].includes(ext)) {
-        modalImage.src = filePath;
-        modalImage.alt = file;
-        modalImage.onload = function() {
-            modalImage.style.display = 'block';
-        };
-        modalImage.onerror = function() {
-            modalText.textContent = `无法加载图片: ${file}`;
-            modalText.style.display = 'block';
-        };
-        modalImage.style.display = 'block';
-    } 
-    else if (['mp4', 'avi', 'mov', 'webm'].includes(ext)) {
-        modalVideo.src = filePath;
-        modalVideo.innerHTML = `<source src="${filePath}" type="video/${ext}">`;
-        modalVideo.onloadeddata = function() {
-            modalVideo.play().catch(e => console.log("自动播放失败:", e));
-            modalVideo.style.display = 'block';
-        };
-        modalVideo.onerror = function() {
-            modalText.textContent = `无法加载视频: ${file}`;
-            modalText.style.display = 'block';
-        };
-        modalVideo.style.display = 'block';
-    }
-    else if (['mp3', 'wav', 'aac', 'flac', 'm4a'].includes(ext)) {
-        modalAudio.src = filePath;
-        modalAudio.onloadeddata = function() {
-            modalAudio.play().catch(e => console.log("自动播放失败:", e));
-            modalAudio.style.display = 'block';
-        };
-        modalAudio.onerror = function() {
-            modalText.textContent = `无法加载音频: ${file}`;
-            modalText.style.display = 'block';
-        };
-        modalAudio.style.display = 'block';
-    }
-    else {
-        modalText.innerHTML = `
-            <div class="d-flex flex-column align-items-center">
-                <p>不支持的文件类型: ${ext}</p>
-                <a href="${filePath}" target="_blank" class="btn btn-primary mt-3">下载文件: ${file}</a>
-            </div>
-        `;
-        modalText.style.display = 'block';
-    }
-}
-
-// 上一个文件
-function prevFile(event) {
-    event.stopPropagation(); // 防止触发关闭模态框
-    if (currentFileIndex > 0) {
-        currentFileIndex--;
-        updateModalContent();
-    }
-}
-
-// 下一个文件
-function nextFile(event) {
-    event.stopPropagation(); // 防止触发关闭模态框
-    if (currentFileIndex < currentFiles.length - 1) {
-        currentFileIndex++;
-        updateModalContent();
-    }
-}
-
-function closeFileModal() {
-    const modalElement = document.getElementById('fileModal');
-    const modal = bootstrap.Modal.getInstance(modalElement);
-    if (modal) {
-        modal.hide();
-        
-        // 停止当前播放的媒体
-        const modalVideo = document.getElementById('modalVideo');
-        const modalAudio = document.getElementById('modalAudio');
-        if (modalVideo) modalVideo.pause();
-        if (modalAudio) modalAudio.pause();
-    }
-}
 
 
 window.likeMessage = likeMessage;
 window.dislikeMessage = dislikeMessage;
 window.validateFileType = validateFileType;
-window.showModal = showModal;
 window.openFileViewer = openFileViewer;
 window.updateModalContent = updateModalContent;
-window.prevFile = prevFile;
-window.nextFile = nextFile;
 window.loadNoticeContent = loadNoticeContent;
-window.closeFileModal = closeFileModal;
+
+
 //
 
 

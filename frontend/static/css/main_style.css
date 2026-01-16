@@ -13,6 +13,12 @@
 
 
     --box-sizing: border-box;
+
+    /* 媒体模态框 */
+    --modal-overlay-color: rgba(0, 0, 0, 0.75);
+    --glass-bg: rgba(255, 255, 255, 0.1);
+    --glass-border: rgba(255, 255, 255, 0.2);
+    --transition-speed: 0.3s;
 }
 
 [data-theme="light"] {
@@ -107,35 +113,6 @@ textarea {
     background-color: var(--background-color) !important;
 }
 
-
-.modal-body, .modal-title, .modal-header {
-    background-color: transparent !important;
-    color: transparent !important;
-}
-
-/* 文件模态框透明背景 */
-.modal-backdrop.file-modal-backdrop {
-    background-color: rgba(0, 0, 0, 0.1) !important;
-}
-
-/* 自定义文件模态框样式 */
-#fileModal.modal {
-    background-color: rgba(0, 0, 0, 0.1);
-}
-
-#fileModal.modal.fade {
-    opacity: 0;
-    transition: opacity 0.15s linear;
-}
-
-#fileModal.modal.show {
-    opacity: 1;
-}
-
-/* 防止默认遮罩层出现 */
-#fileModal.modal .modal-backdrop {
-    display: none !important;
-}
 
 
 .like-button, .dislike-button {

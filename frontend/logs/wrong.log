@@ -97,3 +97,5 @@
 [2026-01-11 02:00:31,715] WARNING: File F:\code\minzhong_wall\longgaowall\longgaowall2\frontend\pages\api\pages\sgfdd\api_pages_sgfdd.html not found. 没有找到F:\code\minzhong_wall\longgaowall\longgaowall2\frontend\pages\api\pages\sgfdd\api_pages_sgfdd.html [F:\code\minzhong_wall\longgaowall\longgaowall2\frontend\tool.py:180]
 [2026-01-11 02:00:31,715] WARNING: File F:\code\minzhong_wall\longgaowall\longgaowall2\frontend\pages\api\pages\sgfdd\api_pages_sgfdd.json not found. 没有找到F:\code\minzhong_wall\longgaowall\longgaowall2\frontend\pages\api\pages\sgfdd\api_pages_sgfdd.json [F:\code\minzhong_wall\longgaowall\longgaowall2\frontend\tool.py:180]
 [2026-01-11 02:00:31,716] WARNING: POST http://127.0.0.1:5411/api/pages/api/pages/sgfdd 404 [F:\code\minzhong_wall\longgaowall\longgaowall2\frontend\app.py:167]
+[2026-01-16 21:07:55,575] WARNING: POST http://127.0.0.1:5411/api/pages/ 405 [F:\code\minzhong_wall\longgaowall\longgaowall2\frontend\app.py:168]
+[2026-01-16 21:07:55,890] WARNING: GET http://127.0.0.1:5411/favicon.ico 404 [F:\code\minzhong_wall\longgaowall\longgaowall2\frontend\app.py:168]
