@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 10
+    },
+    "auditLog": "F:\\code\\minzhong_wall\\longgaowall\\longgaowall2\\frontend\\logs\\.91334e42120b2d168942407e21c3e7d8c7fdc732-audit.json",
+    "files": [
+        {
+            "date": 1769244572662,
+            "name": "F:\\code\\minzhong_wall\\longgaowall\\longgaowall2\\frontend\\logs\\info-2026-01-24.log",
+            "hash": "afa292977435f08776d35ed78a8f87c7ed4d09e243e1c5b00b81c346ce48c9f3"
+        }
+    ],
+    "hashType": "sha256"
+}

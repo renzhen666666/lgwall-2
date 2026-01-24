@@ -9,6 +9,8 @@ const tool = require('./tool');
 const app = express();
 app.use(express.json());
 
+require('dotenv').config({ path: './.env' });
+
 const pagesDataPath = path.join(__dirname, 'pages');
 
 // Winston logging setup
@@ -18,7 +20,6 @@ if (!fs.existsSync(logDir)) {
 }
 
 const serverConfig = require('./server-config');
-
 
 
 const logger = winston.createLogger({
@@ -184,11 +185,8 @@ app.use('/api', (req, res, next) => {
     } else {
         // 否则代理到指定域
         const proxy = createProxyMiddleware({
-            target: serverConfig.getKey('apiUrl'), // 替换为目标域名
+            target: process.env.BACKEND_URL || 'http://localhost:3000', // 替换为目标域名
             changeOrigin: true,
-            pathRewrite: {
-                '^/api': '', // 移除 /api 前缀
-            },
             onProxyReq: (proxyReq, req, res) => {
                 console.log(`Proxying ${req.method} ${req.url} to ${proxyReq.path}`);
             },

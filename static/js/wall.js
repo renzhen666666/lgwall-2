@@ -12,9 +12,7 @@ let uploadProgress = {};
 
 const CHUNK_SIZE = 25 * 1024 * 1024; // 20MB
 
-
-
-
+console.log(`apiUrl: ${apiUrl}`);
 
 
 function saveScrollState() {
@@ -707,7 +705,7 @@ async function submitComment(messageId) {
             showToastBelow(`comment-form-${messageId}`, result.error || '评论失败，请稍后再试');
         }
     } catch (error) {
-        console.error('Error:', error);
+        console.error('Error submitting comment:', error);
         showToastBelow(`comment-form-${messageId}`, '评论失败，请稍后再试');
     } finally {
         progressBarContainer.style.display = 'none';
@@ -918,12 +916,12 @@ function refreshMessage(id) {
                 const newMessageItem = createMessageElement(data.message);
                 messageItem.innerHTML = newMessageItem.innerHTML;
             } else {
-            console.error(data)
+            console.error("Error refreshing message:", data)
             showToastTopRight('', data.error || '刷新失败，请稍后再试', 'warning');
             }
         })
         .catch(error => {
-            console.error('Error:', error);
+            console.error('Error refreshing message:', error);
             showToastTopRight('', '刷新失败，请稍后再试', 'warning');
         })
         .finally(() => {
