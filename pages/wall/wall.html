@@ -1,0 +1,142 @@
+{publish_btn}
+<li class="nav-item ms-2">
+    <button class="white btn btn-primary" id="publishBtn" data-bs-toggle="modal" data-bs-target="#publishModal">
+        <i class="bi bi-pencil-square me-1"></i> 我要发贴
+    </button>
+</li>
+{/publish_btn}
+
+
+<main class="container mt-4 g-4" id="main-content">
+    <h1>欢迎来到龙*高校园墙</h1>
+    <div class="row md-4 g-4">
+        <div class="col-12">
+            <form class="search-bar" id="search-form">
+                <input class="search-input" type="text" placeholder="搜索..." value="" id="search-text">
+                <button class="btn-close" type="button" data-on-click="clearSearch()"> </button>
+                <button class="search-btn" type="button" data-on-click="refreshMessages()">搜索</button>
+            </form>
+        </div>
+        <div class="col-12 mb-2">
+            <div class="filter-sort-container p-3 rounded-3 shadow-sm border g-3">
+                <div class="d-flex flex-row flex-nowrap align-items-center" style="gap: 1rem;">
+                    <div class="d-flex align-items-center flex-shrink-0">
+                        <label class="sort-label fw-bold me-2 mb-0">筛选:</label>
+                        <select class="form-select sort-options-select" id="filter" data-on-change="refreshMessages()">
+                            <option value="all">全部</option>
+                            <option value="files">有图/视频</option>
+                        </select>
+                    </div>
+                    <div class="d-flex align-items-center flex-shrink-0">
+                        <label class="sort-label fw-bold me-2 mb-0">排序方式:</label>
+                        <select class="form-select sort-options-select" id="sort-by" data-on-change="refreshMessages()">
+                            <option value="newest">最新</option>
+                            <option value="likes">👍最多</option>
+                            <option value="dislikes">👎最多</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="ms-auto flex-shrink-0">
+                    <button class="btn-refresh" data-on-click="refreshMessages();"><i class="bi bi-arrow-clockwise me-1"></i>刷新</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12">
+            <div class="messages-container">
+                <ul class="message-box" id="message-box">
+                </ul>
+                <div id="loading" style="display: none;">
+                    <div class="text-center">
+                        <div class="spinner-border" role="status">
+                            <span class="visually-hidden">加载中...</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+<div class="modal fade" id="publishModal" tabindex="-1" aria-labelledby="publishModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content" style="background-color: #fff;">
+            <div class="modal-header">
+                <h5 class="modal-title" id="publishModalLabel">发布新消息</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">X</button>
+            </div>
+            <div class="modal-body">
+                <form id="input-form" class="form-container"
+                 onsubmit="event.preventDefault();"
+                 data-on-submit="handleFormSubmit()">
+                    <textarea 
+                        name="text" 
+                        id="text-input"
+                        class="form-textarea" 
+                        placeholder="想说什么就说什么..."
+                        rows="4"></textarea>
+
+                    <input hidden type="text" name="tags" id="tags-input-hidden">    
+
+                    <div class="bgc form-group">
+                        <div class="tags-input-container">
+                            <div class="tag-pre-wrp" id="tag-pre-wrp"></div>
+                            <input 
+                                type="text" 
+                                id="tags-input" 
+                                class="tags-input" 
+                                placeholder="添加标签（可选，回车或逗号分隔）" 
+                                
+                                data-on-keydown="handleTagInput" 
+                                data-keydown-params='["event"]'
+
+                                data-on-input="showSuggestionTags()">
+                            </input>
+                        </div>
+
+                        <div class="tag-suggestions" id="tag-suggestions"></div>
+
+                    </div>
+
+                
+                    <div class="bgc file-upload-container" id="drop-area">
+                        <label for="file-input" class="file-input-label">
+                            <i class="bi bi-cloud-upload"></i>
+                            <span>添加附件</span>
+                            <div class="drag-text">或将文件拖拽到此处</div>
+                        </label>
+                        <input 
+                            type="file" 
+                            name="file" 
+                            multiple 
+                            accept="image/*,audio/*,video/*" 
+                            id="file-input" 
+                            data-on-change="handleFileSelect(event)">
+                        <div id="drop-area-overlay" style="display: none; position: absolute; inset: 0; background-color: rgba(106, 13, 173, 0.1); border: 2px dashed #6A0DAD; border-radius: 12px; pointer-events: none;"></div>
+                    </div>
+
+                    <div class="form-actions">
+                        <ul id="file-list" class="file-list"></ul>
+                    </div>
+                </form>
+                <!--
+                <ul class="flashes mt-3" id="flashes">
+                    {% for message in get_flashed_messages() %}
+                    <li>{{ message }}</li>
+                    {% endfor %}
+                </ul>
+                -->
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Close">取消</button>
+                <button type="button" id="submit-button" class="btn btn-primary" data-on-click="handleFormSubmit()">发布</button>
+            </div>
+            <div class="progress-bar-container" style="display:none; padding: 0 1rem 1rem;">
+                <div class="progress-bar" id="uploadProgressBar" style="width: 0%;"></div>
+                <div id="status-text" style="text-align: center; margin-top: 5px;"></div>
+            </div>
+        </div>
+    </div>
+</div>

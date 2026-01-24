@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/css/aos.css">
+        <script src="/js/bootstrap.bundle.min.js"></script>
+        <script src="/js/aos.js"></script>
+        <link rel="stylesheet" href="/css/main_style.css">
+        <link rel="stylesheet" href="/css/component.css">
+        <title>加载中 . . .</title>
+    </head>
+    <body>
+        <section id="nav">
+
+        </section>
+
+        <section id="menu">
+
+        </section>
+
+        <main id="app">
+
+        </main>
+
+        <div class="modal fade" id="notice" tabindex="-1" aria-labelledby="noticeLabel" aria-hidden="true">
+            <div class="modal-dialog" style="max-height: 500px;overflow: auto;">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="noticeLabel">公告</h4>
+                    </div>
+                    <div class="modal-body" id="notice-content">
+                        <div class="text-center">
+                            <div class="spinner-border" role="status">
+                                <span class="visually-hidden">加载中...</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--图片视频模态框-->
+        <div id="mediaModal" class="image-modal-overlay" onclick="handleOverlayClick(event)">
+            <div class="modal-content-wrapper">
+
+                <button class="modal-close-btn" onclick="closeModal()" aria-label="关闭">&times;</button>
+                
+                <button id="prevBtn" class="nav-btn prev-btn" onclick="changeMedia(-1)" aria-label="上一个">
+                    &#10094;
+                </button>
+
+                <div class="media-container" id="mediaContainer">
+                    <!-- 动态插入内容 -->
+                </div>
+
+                <button id="nextBtn" class="nav-btn next-btn" onclick="changeMedia(1)" aria-label="下一个">
+                    &#10095;
+                </button>
+                
+                <div class="modal-info-bar">
+                    <div class="modal-text-group">
+                        <div id="modalTitle" class="modal-title"></div>
+                        <div id="modalDesc" class="modal-desc"></div>
+                    </div>
+                    <div id="modalCounter" class="modal-counter">1 / 5</div>
+                </div>
+            </div>
+        </div>
+
+        <!--消息组件HTML 结构占位符-->
+        <div id="toastCenterOverlay" class="toast-center-overlay">
+            <div class="toast-center-box">
+                <div class="toast-center-title" id="centerTitle">标题</div>
+                <div class="toast-center-msg" id="centerMsg">内容</div>
+                <button class="toast-center-btn" onclick="closeToastCenter()">确定</button>
+            </div>
+        </div>
+
+        <div id="toastTopRightContainer" class="toast-top-right-container"></div>
+        <div id="toastBottomRightContainer" class="toast-bottom-right-container"></div>
+
+
+
+        <script src="/config.js"></script>
+        <script src="/js/component.js"></script>
+        <script src="/js/main.js"></script>
+        <script src="/frame.js"></script>
+    </body>
+</html>

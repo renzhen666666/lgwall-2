@@ -1,0 +1,50 @@
+<div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar" aria-labelledby="sidebarLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="sidebarLabel">
+            <button id="theme-toggle" class="theme-toggle btn btn-outline-light" data-on-click="toggleTheme">
+                <span class="theme-icon">🌙</span>
+            </button>
+        </h5>
+        <button type="button" class="btn-menu-close" data-bs-dismiss="offcanvas" aria-label="Close" style="background-color: transparent;">
+            <img src="/img/menu-fold.png" alt="关闭菜单" style="width:30px; height:30px; filter: invert(1);"></button>
+    </div>
+    <div class="offcanvas-body">
+        <div class="sidebar-menu">
+
+                <ul class="list-unstyled">
+                    <li class="sidebar-item">
+                        <a href="/" class="nav-link sidebar-link {homeActive}">
+                            <i class="bi bi-house-door me-3"></i>
+                            <span>首页</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="/wall" class="nav-link sidebar-link {wallActive}">
+                            <i class="bi bi-chat-square-text me-3"></i>
+                            <span>校园墙</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="/apps" class="nav-link sidebar-link {appsActive}">
+                            <i class="bi bi-chat-square-text me-3"></i>
+                            <span>应用广场</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="/help" class="nav-link sidebar-link {helpActive}">
+                            <i class="bi bi-question-circle me-3"></i>
+                            <span>帮助</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <button class="nav-link sidebar-link w-100 text-start" data-bs-toggle="modal" data-bs-target="#notice">
+                            <i class="bi bi-bell me-3"></i>
+                            <span>公告</span>
+                        </button>
+                    </li>
+                </ul>
+
+
+        </div>
+    </div>
+</div>

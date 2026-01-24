@@ -1,0 +1,6 @@
+{
+    "title": "举报",
+
+    "styles":["help_report.css"],
+    "scripts":["report.js"]
+}
