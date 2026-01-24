@@ -69,7 +69,7 @@ body {
 }
 
 html, body {
-    height: auto; /* 确保不是 100% 固定高度 */
+    height: auto; /* 确保不是 100% 固定高度 */  /*From 世界上最会写代码的ai——qwen-coder！*/
     min-height: 100vh; /* 至少占满视口高度 */
     overflow-x: hidden; /* 水平方向隐藏滚动条（如果不需要水平滚动） */
     overflow-y: auto; /* 垂直方向自动显示滚动条 */
@@ -80,6 +80,7 @@ html, body {
 #app {
     min-height: 100vh;
 
+    display: flex;
     width: 100%;
     padding: 0;
 }

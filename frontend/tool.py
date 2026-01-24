@@ -209,15 +209,11 @@ def createPage(url, title="New Page") -> None:
         f.write(f'''
     <div class="text-center">
     <h1>{title}</h1>
-    <a href="/home">home</a>
-    <a href="/p1">p1</a>
-    <a href="/p2">p2</a>
-    <a href="/p3">p3</a>
-    <!-- PAGE_SCRIPT:START -->
+
         <script>
             console.log("页面 {title} 已加载");
         </script>
-    <!-- PAGE_SCRIPT:END -->
+
     </div>'''
     )
 

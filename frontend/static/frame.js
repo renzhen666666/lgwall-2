@@ -82,11 +82,10 @@ function initTheme() {
 
 // 侧边栏加载完成后初始化主题
 document.addEventListener('menuLoaded', initThemeToggle);
-function jumpTo(url) {
+function jumpTo(url, loadContainerId = 'app') {
     if (url.startsWith('/')) {
         if (url === '/') url = '/home';
-        window.history.pushState({ path: url }, '', url);
-        loadPage();
+        loadPage(loadContainerId, url);
     } else {
         window.open(url, '_blank');
     }
@@ -217,11 +216,24 @@ async function clearOldPage(){
     document.documentElement.style.height = '';
 }
 
-async function loadPage() {
-    app.innerHTML = loading;
-    const path = window.location.pathname;
+async function loadPage(loadContainerId = 'app', url=window.location.pathname) {
+    const oldPath = window.location.pathname;
+    console.log('oldPath:', oldPath);
 
-    const cleanP = clearOldPage();
+
+    window.history.pushState({ path: url }, '', url);
+
+    const container = document.getElementById(loadContainerId);
+
+    if(!container) {
+        console.error(`容器 ${loadContainerId} 不存在`);
+        return;
+    }
+
+
+    const path = window.location.pathname;
+    container.innerHTML = loading;
+
 
     try {
 
@@ -231,12 +243,36 @@ async function loadPage() {
 
         console.log(`${path} data:`, data);
 
+        switch (data?.config?.loadData?.method) {
+            case 'derive':
+                const superU = data.config.loadData.super;
+                if(oldPath.startsWith(superU) && oldPath !== path) {
+                    break;
+                }/* else if(data.config.loadData.loadSuper) {
+                    await loadPage(loadContainerId, superU);
+                    break;
+                } */else{
+                    await loadPage('app', superU);
+                    await loadPage(data.config.loadData.deriveContainer, path);
+                    return;
+                }
+
+
+
+
+                break;
+            default:
+                break;
+        }
+
+    
+
         var methodsMap = defaultMethods;
         
         
         let initFuncLst = [];
 
-        if (data.config.scripts) {
+        if (data?.config?.scripts) {
             // 等待所有异步加载完成 ！！！！！
             const methodsPromises = data.config.scripts.map(scriptSrc => loadScriptFromSrc(scriptSrc));
 
@@ -249,7 +285,7 @@ async function loadPage() {
             });
         }
 
-        if(data.config.styles) {
+        if(data?.config?.styles) {
             const stylesPromises = data.config.styles.map(cssFilename => loadStyles(`/css/${cssFilename}`));
             await Promise.all(stylesPromises);
         }
@@ -257,14 +293,14 @@ async function loadPage() {
         const _data = renderHtml(data.page);
 
         let config = _data.config;
-        config.nav = data.config.nav || {};
-        config.menu = data.config.menu || {};
+        config.nav = data?.config?.nav || {};
+        config.menu = data?.config?.menu || {};
 
         console.log('htmlScript:', _data.scripts);
         console.log('rederConfig:', config);
 
 
-        await cleanP; // 等待清理完成！！！！！！
+        if(loadContainerId === 'app') await clearOldPage(); // 等待清理完成！！！！！！
 
 
         if(_data.scripts) {
@@ -283,7 +319,7 @@ async function loadPage() {
         await loadNavigation(config);
         //
 
-        renderPage(_data.html, data.config, methodsMap=methodsMap);
+        renderPage(_data.html, data.config, methodsMap=methodsMap, loadContainerId);
 
         window.dispatchEvent(new Event('pageLoaded'));
 
@@ -332,8 +368,13 @@ function renderHtml(html) {
 
 
 //来自qianwen
-function renderPage(pageHtml, config, methodsMap = {}) {
-    app.innerHTML = pageHtml;
+function renderPage(pageHtml, config, methodsMap = {}, container='app') {
+    const containerElement = document.getElementById(container);
+    if(!containerElement) {
+        console.error(`容器 ${container} 不存在`);
+        return;
+    }
+    containerElement.innerHTML = pageHtml;
     if (config?.title) document.title = config.title;
 
     document.querySelectorAll('*').forEach(element => {
@@ -413,10 +454,20 @@ function renderPage(pageHtml, config, methodsMap = {}) {
     const as = document.querySelectorAll('a:not([data-bound])');
     as.forEach(a => {
         a.setAttribute('data-bound', 'true');
+
+        let loadContainerId = 'app'
+
+        switch (a.getAttribute('data-load')) {
+            case 'derive':
+                loadContainerId = a.closest('[data-derive-container]')?.getAttribute('id') || 'app';
+                break;
+
+        }
+
+
         a.addEventListener('click', (e) => {
-        e.preventDefault();
-        const href = a.getAttribute('href');
-        jumpTo(href);
+            e.preventDefault();
+            jumpTo(a.getAttribute('href'), loadContainerId);
         });
     });
 }
@@ -461,11 +512,25 @@ function renderTemplate(content, data = {}) {
  async function processResponse(response) {
     const data = await response.json();
     if (!data.success) {
-        console.error('API返回错误:', data.error || '未知错误');
+        console.warn('API返回错误:', data.error || '未知错误');
         if (data.data?.page) {
-            return data.data
+            return {'page': data.data.page}
         } else {
-            return {'page': `<div class="alert alert-danger" role="alert">出现问题， 请稍后再试</div>`}
+            switch (response.status) {
+                case 404:
+                    return {'page': `<div class="alert alert-danger" role="alert">404 页面不存在</div>`}
+                case 500:
+                        return {'page': `<div class="alert alert-danger" role="alert">500 服务器错误</div>`}
+                case 401:
+                    return {'page': `<div class="alert alert-danger" role="alert">401 未授权</div>`}
+
+
+                default:
+                    return {'page': `<div class="alert alert-danger" role="alert">${data.error || '我们也不知道出了什么问题，你就先受着吧(doge)'}</div>`}
+            }
+
+
+            
         }
     }
     return data.data;

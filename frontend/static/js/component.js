@@ -255,7 +255,8 @@ function showToastBottomRight(message, duration = 3000) {
     }
 }
 
-/**
+/*
+
  * 4. 指定元素下方提示
  * @param {string} targetId - 目标元素的ID
  * @param {string} message - 错误信息
@@ -296,7 +297,7 @@ function showToastBelow(targetId, message) {
     }, 3000);
 }
 
-
+//   From GLM4.7 -- 阿里云百炼 / cherry studio
 
 
 window.openFileViewer = openModal;
