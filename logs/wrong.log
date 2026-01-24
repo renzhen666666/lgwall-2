@@ -126,3 +126,5 @@
 [2026-01-17 18:34:39,691] WARNING: File F:\code\minzhong_wall\longgaowall\longgaowall2\frontend\pages\help\help.html not found. 没有找到F:\code\minzhong_wall\longgaowall\longgaowall2\frontend\pages\help\help.html [F:\code\minzhong_wall\longgaowall\longgaowall2\frontend\tool.py:180]
 [2026-01-17 18:34:39,693] WARNING: File F:\code\minzhong_wall\longgaowall\longgaowall2\frontend\pages\help\help.json not found. 没有找到F:\code\minzhong_wall\longgaowall\longgaowall2\frontend\pages\help\help.json [F:\code\minzhong_wall\longgaowall\longgaowall2\frontend\tool.py:180]
 [2026-01-17 18:34:39,695] WARNING: POST http://127.0.0.1:5411/api/pages/help 404 [F:\code\minzhong_wall\longgaowall\longgaowall2\frontend\app.py:168]
+[2026-01-24 09:47:29,199] WARNING: POST http://192.168.1.4:5411/api/pages/ 405 [F:\code\minzhong_wall\longgaowall\longgaowall2\frontend\app.py:168]
+[2026-01-24 09:47:29,500] WARNING: GET http://192.168.1.4:5411/favicon.ico 404 [F:\code\minzhong_wall\longgaowall\longgaowall2\frontend\app.py:168]
