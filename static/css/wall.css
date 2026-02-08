@@ -14,16 +14,10 @@
     margin-bottom: 15px;
     border-radius: 5px;
 
-    overflow-x: hidden;
-    overflow-y: hidden;
 
-    -ms-overflow-style: none;  /* IE 和 Edge */
-    scrollbar-width: none;  /* Firefox */
+
 }
 
-.messages-container::-webkit-scrollbar {
-    display: none; /* 或者 width: 0; */
-}
 
 .message-box {
     list-style-type: none;
@@ -32,13 +26,6 @@
     margin: 8px;
     gap: 8px;
 
-
-
-    overflow-x: hidden;
-    overflow-y: hidden;
-
-    -ms-overflow-style: none;  /* IE 和 Edge */
-    scrollbar-width: none;  /* Firefox */
 }
 
 .message-box::-webkit-scrollbar {

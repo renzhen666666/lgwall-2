@@ -208,7 +208,7 @@ function loadHotMessage() {
 
 
     const xhr = new XMLHttpRequest();
-    xhr.open('GET', `${apiUrl}/get_hot_messages`);
+    xhr.open('POST', `${apiUrl}/get_hot_messages`);
     xhr.setRequestHeader('Content-Type', 'application/json');
     xhr.onreadystatechange = function() {
         if (xhr.readyState === 4) {

@@ -1,3 +1,4 @@
 {
-    "title": "帮助"
+    "title": "帮助",
+    "styles": ["help.css"]
 }

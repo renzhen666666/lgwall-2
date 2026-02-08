@@ -1,25 +1,121 @@
-const express = require('express');
-const { createProxyMiddleware } = require('http-proxy-middleware');
-const path = require('path');
-const fs = require('fs');
-const winston = require('winston');
-require('winston-daily-rotate-file');
-const tool = require('./tool');
+import express from 'express';
+import { createProxyMiddleware } from 'http-proxy-middleware';
+import path from 'path';
+import fs from 'fs';
+import winston from 'winston';
+import 'winston-daily-rotate-file';
+import tool from './tool.mjs';
+import dotenv from 'dotenv';
+
+
+import { fileURLToPath } from 'url';
+import { dirname } from 'path';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 const app = express();
 app.use(express.json());
 
-require('dotenv').config({ path: './.env' });
+
+dotenv.config({ path: './.env' });
 
 const pagesDataPath = path.join(__dirname, 'pages');
 
-// Winston logging setup
 const logDir = path.join(__dirname, 'logs');
 if (!fs.existsSync(logDir)) {
     fs.mkdirSync(logDir, { recursive: true });
 }
 
-const serverConfig = require('./server-config');
+
+const routesModule = await import('./routes.mjs');
+const routes = routesModule.default;
+
+
+class RouteParser {
+    constructor(routes) {
+        // 预编译路由配置
+        this.compiledRoutes = routes.map(route => this.compileRoute(route));
+    }
+
+    // 🔥 将 "/route/:q<int>" 转换为正则和提取函数
+    compileRoute(routeConfig) {
+        const { path: routePath, template, function: funcConfig } = routeConfig;
+        // 1. 提取参数定义 (name, type)
+        const paramDefs = [];
+        const regexPattern = routePath.replace(
+            /:(\w+)(?:<(\w+)>)*\/?/g, // 匹配 :name<type> 或 :name/
+            (match, paramName, paramType = 'string') => {
+                paramDefs.push({ name: paramName, type: paramType });
+                // 根据类型生成不同的正则捕获组
+                const typeRegex = this.getTypeRegex(paramType);
+                return `(${typeRegex})`;
+        }
+        ).replace(/\//g, '\\/'); // 转义路径分隔符
+
+        // 2. 创建正则表达式
+        const regex = new RegExp(`^${regexPattern}$`);
+
+        // 3. 返回编译后的路由对象
+        return {
+            regex,
+            template,
+            function: funcConfig,
+            paramDefs,
+            extractParams: (match) => {
+                const params = {};
+                for (let i = 0; i < paramDefs.length; i++) {
+                const { name, type } = paramDefs[i];
+                let value = match[i + 1];
+                // 4. 类型转换
+                params[name] = this.convertParam(value, type);
+                }
+                return params;
+            }
+        };
+    }
+
+    getTypeRegex(type) {
+        switch (type) {
+        case 'int':
+            return '\\d+'; // 只匹配数字
+        case 'float':
+            return '\\d+\\.\\d+'; // 简单的浮点数匹配
+        case 'string':
+            return '[^\\/]+?'; // 匹配非斜杠字符
+        default:
+            return '[^\\/]+?'; // 匹配非斜杠字符
+        }
+    }
+
+    convertParam(value, type) {
+        switch (type) {
+        case 'int':
+            return parseInt(value, 10);
+        case 'float':
+            return parseFloat(value);
+        case 'string':
+        default:
+            return value;
+        }
+    }
+
+    // 🔥 主匹配函数
+    match(path) {
+        for (const route of this.compiledRoutes) {
+            const match = path.match(route.regex);
+            if (match) {
+                return {
+                    template: route.template,
+                    function: route.function,
+                    params: route.extractParams(match)
+                };
+            }
+        }
+        return null; // 未找到匹配
+    }
+}
+
 
 
 const logger = winston.createLogger({
@@ -70,8 +166,14 @@ const logger = winston.createLogger({
 logger.info(`---------------------------------------------------`)
 logger.info(`Server started at ${new Date().toLocaleString()}`);
 
+const router = new RouteParser(routes);
+const pages = new tool.contextCache((msg) => logger.warn(msg), true);
 
-const pages = new tool.contextCache((msg) => logger.warning(msg), true);
+
+app.all('*', (req, res, next) => {
+    logger.info(`${req.method} ${req.url}`);
+    next();
+});
 
 // Static file routes
 app.get('/js/:filename', (req, res) => {
@@ -98,14 +200,6 @@ app.get('/frame.js', (req, res) => {
     res.sendFile(path.join(__dirname, 'static', 'frame.js'));
 });
 
-// Main route - serve index.html
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'index.html'));
-});
-
-app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'index.html'));
-});
 
 // API: Get page content
 app.post('/api/pages/*', (req, res) => {
@@ -113,8 +207,21 @@ app.post('/api/pages/*', (req, res) => {
         let url = req.params[0];
         if (url.startsWith('/')) url = url.substring(1);
 
+        const matchedRoute = router.match('/' + url); 
+
+        let requestedPath, pageParamsMap={};
         const pagesPath = path.resolve(pagesDataPath);
-        const requestedPath = path.resolve(pagesPath, url);
+
+        if(matchedRoute) {
+            url = matchedRoute.template.path.substring(1);
+            Object.entries(matchedRoute.template?.params)?.forEach(([key, value]) => {
+                pageParamsMap[key] = matchedRoute.params[value];
+            });
+        } 
+
+        
+        requestedPath = path.resolve(pagesPath, url);
+        
 
         // Security check
         if (!requestedPath.startsWith(pagesPath)) {
@@ -151,6 +258,8 @@ app.post('/api/pages/*', (req, res) => {
             page_html = page_data;
         }
 
+        page_html = tool.renderTemplate(page_html, pageParamsMap, logger.error);
+
         res.json({
             success: true,
             data: { page: page_html, config: config }
@@ -178,30 +287,32 @@ app.post('/api/navigation', (req, res) => {
 });
 
 app.use('/api', (req, res, next) => {
+    /*
     // 检查是否是需要特殊处理的路径
     if (req.path.startsWith('/api/pages') || req.path === '/api/navigation') {
         // 如果是已有的 API 路径，跳过代理，继续执行后续路由
         next();
     } else {
         // 否则代理到指定域
-        const proxy = createProxyMiddleware({
-            target: process.env.BACKEND_URL || 'http://localhost:3000', // 替换为目标域名
-            changeOrigin: true,
-            onProxyReq: (proxyReq, req, res) => {
-                console.log(`Proxying ${req.method} ${req.url} to ${proxyReq.path}`);
-            },
-            onError: (err, req, res) => {
-                console.error(`Proxy error for ${req.url}:`, err);
-                res.status(500).json({
-                    success: false,
-                    error: 'Proxy error',
-                    data: { page: '500 Proxy Error' }
-                });
-            }
-        });
-        
-        proxy(req, res, next);
-    }
+    */
+    const proxy = createProxyMiddleware({
+        target: process.env.BACKEND_URL || 'http://localhost:3000', // 替换为目标域名
+        changeOrigin: true,
+        onProxyReq: (proxyReq, req, res) => {
+            logger.info(`Proxying ${req.method} ${req.url} to ${proxyReq.path}`);
+        },
+        onError: (err, req, res) => {
+            logger.error(`Proxy error for ${req.url}:`, err);
+            res.status(500).json({
+                success: false,
+                error: 'Proxy error',
+                data: { page: '500 Proxy Error' }
+            });
+        }
+    });
+    
+    proxy(req, res, next);
+    // }
 });
 
 // Request logging middleware
@@ -211,13 +322,22 @@ app.use((req, res, next) => {
         if (res.statusCode >= 500) {
             logger.error(`${req.method} ${req.url} ${res.statusCode}`);
         } else if (res.statusCode >= 400) {
-            logger.warning(`${req.method} ${req.url} ${res.statusCode}`);
+            logger.warn(`${req.method} ${req.url} ${res.statusCode}`);
         } else {
             logger.info(`${req.method} ${req.url} ${res.statusCode}`);
         }
         originalSend.call(this, data);
     };
     next();
+});
+
+// Main route - serve index.html
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'index.html'));
+});
+
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 const PORT = process.env.PORT || 5000;

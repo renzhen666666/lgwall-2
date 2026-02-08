@@ -1,0 +1,54 @@
+[SH 2026/02/08 21:08:12 UTC 2026-02-08T13:08:12.599Z] info: ---------------------------------------------------
+[SH 2026/02/08 21:08:12 UTC 2026-02-08T13:08:12.673Z] info: Server started at 2026/2/8 21:08:12
+[SH 2026/02/08 21:08:50 UTC 2026-02-08T13:08:50.702Z] info: POST /api/pages/home
+[SH 2026/02/08 21:08:51 UTC 2026-02-08T13:08:51.158Z] info: GET /js/home.js
+[SH 2026/02/08 21:08:51 UTC 2026-02-08T13:08:51.200Z] info: GET /favicon.ico
+[SH 2026/02/08 21:08:51 UTC 2026-02-08T13:08:51.207Z] info: GET /css/home.css
+[SH 2026/02/08 21:08:51 UTC 2026-02-08T13:08:51.257Z] info: POST /api/navigation
+[SH 2026/02/08 21:08:51 UTC 2026-02-08T13:08:51.281Z] info: GET /img/menu.png
+[SH 2026/02/08 21:08:51 UTC 2026-02-08T13:08:51.284Z] info: GET /img/menu-fold.png
+[SH 2026/02/08 21:08:52 UTC 2026-02-08T13:08:52.478Z] info: POST /api/get_hot_messages
+[SH 2026/02/08 21:08:52 UTC 2026-02-08T13:08:52.485Z] info: Proxying POST /api/get_hot_messages to /api/get_hot_messages
+[SH 2026/02/08 21:08:52 UTC 2026-02-08T13:08:52.917Z] info: GET /api/static/tiny_files/084bfe3d-4661-4597-9221-895e3a0f1d22_20250822151513_1.jpg
+[SH 2026/02/08 21:08:52 UTC 2026-02-08T13:08:52.920Z] info: Proxying GET /api/static/tiny_files/084bfe3d-4661-4597-9221-895e3a0f1d22_20250822151513_1.jpg to /api/static/tiny_files/084bfe3d-4661-4597-9221-895e3a0f1d22_20250822151513_1.jpg
+[SH 2026/02/08 21:08:52 UTC 2026-02-08T13:08:52.933Z] info: GET /api/static/tiny_files/1_70_ciallo.png
+[SH 2026/02/08 21:08:52 UTC 2026-02-08T13:08:52.937Z] info: Proxying GET /api/static/tiny_files/1_70_ciallo.png to /api/static/tiny_files/1_70_ciallo.png
+[SH 2026/02/08 21:08:52 UTC 2026-02-08T13:08:52.945Z] info: GET /api/static/tiny_files/90ec8245-2a94-4b3e-ba67-422a522e7e40_avatar.jpg
+[SH 2026/02/08 21:08:52 UTC 2026-02-08T13:08:52.949Z] info: Proxying GET /api/static/tiny_files/90ec8245-2a94-4b3e-ba67-422a522e7e40_avatar.jpg to /api/static/tiny_files/90ec8245-2a94-4b3e-ba67-422a522e7e40_avatar.jpg
+[SH 2026/02/08 21:08:53 UTC 2026-02-08T13:08:53.558Z] info: GET /api/static/tiny_files/3b648778-eec6-477b-b47e-c71f19f41df3_Ciallo__.png
+[SH 2026/02/08 21:08:53 UTC 2026-02-08T13:08:53.560Z] info: Proxying GET /api/static/tiny_files/3b648778-eec6-477b-b47e-c71f19f41df3_Ciallo__.png to /api/static/tiny_files/3b648778-eec6-477b-b47e-c71f19f41df3_Ciallo__.png
+[SH 2026/02/08 21:08:53 UTC 2026-02-08T13:08:53.564Z] info: GET /api/static/tiny_files/d682e62c-f9fe-40ef-93c7-bc81d29ce4f0_huihui.jpg
+[SH 2026/02/08 21:08:53 UTC 2026-02-08T13:08:53.566Z] info: Proxying GET /api/static/tiny_files/d682e62c-f9fe-40ef-93c7-bc81d29ce4f0_huihui.jpg to /api/static/tiny_files/d682e62c-f9fe-40ef-93c7-bc81d29ce4f0_huihui.jpg
+[SH 2026/02/08 21:08:53 UTC 2026-02-08T13:08:53.608Z] info: GET /api/static/tiny_files/151691ce-c536-4305-adc6-bfb29d0ec567_SD002AA.png
+[SH 2026/02/08 21:08:53 UTC 2026-02-08T13:08:53.609Z] info: Proxying GET /api/static/tiny_files/151691ce-c536-4305-adc6-bfb29d0ec567_SD002AA.png to /api/static/tiny_files/151691ce-c536-4305-adc6-bfb29d0ec567_SD002AA.png
+[SH 2026/02/08 21:08:53 UTC 2026-02-08T13:08:53.671Z] info: GET /api/static/tiny_files/464f7663-585e-4152-ae76-1b5e0d22d3ef_ClassIn_20240907091925.jpg
+[SH 2026/02/08 21:08:53 UTC 2026-02-08T13:08:53.673Z] info: Proxying GET /api/static/tiny_files/464f7663-585e-4152-ae76-1b5e0d22d3ef_ClassIn_20240907091925.jpg to /api/static/tiny_files/464f7663-585e-4152-ae76-1b5e0d22d3ef_ClassIn_20240907091925.jpg
+[SH 2026/02/08 21:09:00 UTC 2026-02-08T13:09:00.023Z] info: GET /js/bootstrap.bundle.min.js
+[SH 2026/02/08 21:09:00 UTC 2026-02-08T13:09:00.024Z] info: GET /config.js
+[SH 2026/02/08 21:09:00 UTC 2026-02-08T13:09:00.024Z] info: GET /js/aos.js
+[SH 2026/02/08 21:09:00 UTC 2026-02-08T13:09:00.025Z] info: GET /js/component.js
+[SH 2026/02/08 21:09:00 UTC 2026-02-08T13:09:00.026Z] info: GET /js/main.js
+[SH 2026/02/08 21:09:00 UTC 2026-02-08T13:09:00.027Z] info: GET /frame.js
+[SH 2026/02/08 21:09:00 UTC 2026-02-08T13:09:00.033Z] info: GET /js/home.js
+[SH 2026/02/08 21:09:15 UTC 2026-02-08T13:09:15.612Z] info: GET /help/report
+[SH 2026/02/08 21:09:15 UTC 2026-02-08T13:09:15.636Z] info: GET /css/bootstrap.min.css
+[SH 2026/02/08 21:09:15 UTC 2026-02-08T13:09:15.639Z] info: GET /css/aos.css
+[SH 2026/02/08 21:09:15 UTC 2026-02-08T13:09:15.641Z] info: GET /js/bootstrap.bundle.min.js
+[SH 2026/02/08 21:09:15 UTC 2026-02-08T13:09:15.643Z] info: GET /css/main_style.css
+[SH 2026/02/08 21:09:15 UTC 2026-02-08T13:09:15.660Z] info: GET /css/component.css
+[SH 2026/02/08 21:09:15 UTC 2026-02-08T13:09:15.664Z] info: GET /js/aos.js
+[SH 2026/02/08 21:09:15 UTC 2026-02-08T13:09:15.666Z] info: GET /config.js
+[SH 2026/02/08 21:09:15 UTC 2026-02-08T13:09:15.669Z] info: GET /js/component.js
+[SH 2026/02/08 21:09:15 UTC 2026-02-08T13:09:15.671Z] info: GET /js/main.js
+[SH 2026/02/08 21:09:15 UTC 2026-02-08T13:09:15.674Z] info: GET /frame.js
+[SH 2026/02/08 21:09:15 UTC 2026-02-08T13:09:15.688Z] info: POST /api/pages/help/report
+[SH 2026/02/08 21:09:15 UTC 2026-02-08T13:09:15.975Z] info: GET /js/report.js
+[SH 2026/02/08 21:09:16 UTC 2026-02-08T13:09:16.019Z] info: GET /favicon.ico
+[SH 2026/02/08 21:09:16 UTC 2026-02-08T13:09:16.021Z] info: GET /css/help_report.css
+[SH 2026/02/08 21:09:29 UTC 2026-02-08T13:09:29.658Z] info: GET /js/bootstrap.bundle.min.js
+[SH 2026/02/08 21:09:29 UTC 2026-02-08T13:09:29.659Z] info: GET /js/aos.js
+[SH 2026/02/08 21:09:29 UTC 2026-02-08T13:09:29.659Z] info: GET /config.js
+[SH 2026/02/08 21:09:29 UTC 2026-02-08T13:09:29.659Z] info: GET /js/component.js
+[SH 2026/02/08 21:09:29 UTC 2026-02-08T13:09:29.667Z] info: GET /js/main.js
+[SH 2026/02/08 21:09:29 UTC 2026-02-08T13:09:29.672Z] info: GET /frame.js
+[SH 2026/02/08 21:09:29 UTC 2026-02-08T13:09:29.674Z] info: GET /js/report.js

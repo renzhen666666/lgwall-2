@@ -6,9 +6,14 @@
     "auditLog": "F:\\code\\minzhong_wall\\longgaowall\\longgaowall2\\frontend\\logs\\.b0d0b4e7db3de4a6101ca71fb55d24e79dd7aff9-audit.json",
     "files": [
         {
-            "date": 1769244572668,
-            "name": "F:\\code\\minzhong_wall\\longgaowall\\longgaowall2\\frontend\\logs\\error-2026-01-24.log",
-            "hash": "c34eb6694c355748996bff168351149641ae5c54d4cc2936e5f4467b565f41bb"
+            "date": 1770472323506,
+            "name": "F:\\code\\minzhong_wall\\longgaowall\\longgaowall2\\frontend\\logs\\error-2026-02-07.log",
+            "hash": "41ac1faebe6d24438b41a8daf09c86f9a4f1a3917b72fcfc050cd0486d2ff97f"
+        },
+        {
+            "date": 1770556092597,
+            "name": "F:\\code\\minzhong_wall\\longgaowall\\longgaowall2\\frontend\\logs\\error-2026-02-08.log",
+            "hash": "881289661102168e72d3e3f02540e4e038d51f0ea04d7af64ceeab3923012199"
         }
     ],
     "hashType": "sha256"

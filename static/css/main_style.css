@@ -83,6 +83,9 @@ html, body {
     display: flex;
     width: 100%;
     padding: 0;
+
+    display: flex;
+    flex-direction: column;
 }
 
 button {
@@ -93,6 +96,7 @@ button {
     transform: scale(1.05);
     transition: transform 0.3s ease;
 }
+
 
 
 h1, h2, h3, h4, h5, h6 {
@@ -124,6 +128,19 @@ textarea {
     box-sizing: var(--box-sizing) !important;
     border-color: var(--border-color) !important;
     box-shadow: var(--shadow-color) !important;
+}
+
+.wid100 {
+    min-width: 100vh !important;
+}
+
+.hidden-scrollbar {
+    -ms-overflow-style: none;  /* IE 和 Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.hidden-scrollbar::-webkit-scrollbar {
+    display: none; /* 或者 width: 0; */
 }
 
 .visually-hidden {

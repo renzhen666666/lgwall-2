@@ -1,0 +1,493 @@
+[SH 2026/02/07 21:52:03 UTC 2026-02-07T13:52:03.508Z] info: ---------------------------------------------------
+[SH 2026/02/07 21:52:03 UTC 2026-02-07T13:52:03.524Z] info: Server started at 2026/2/7 21:52:03
+[SH 2026/02/07 21:52:21 UTC 2026-02-07T13:52:21.885Z] info: GET /
+[SH 2026/02/07 21:52:21 UTC 2026-02-07T13:52:21.959Z] info: GET /css/bootstrap.min.css
+[SH 2026/02/07 21:52:21 UTC 2026-02-07T13:52:21.961Z] info: GET /css/aos.css
+[SH 2026/02/07 21:52:21 UTC 2026-02-07T13:52:21.963Z] info: GET /css/main_style.css
+[SH 2026/02/07 21:52:21 UTC 2026-02-07T13:52:21.964Z] info: GET /js/bootstrap.bundle.min.js
+[SH 2026/02/07 21:52:21 UTC 2026-02-07T13:52:21.965Z] info: GET /js/aos.js
+[SH 2026/02/07 21:52:21 UTC 2026-02-07T13:52:21.966Z] info: GET /css/component.css
+[SH 2026/02/07 21:52:21 UTC 2026-02-07T13:52:21.973Z] info: GET /config.js
+[SH 2026/02/07 21:52:21 UTC 2026-02-07T13:52:21.974Z] info: GET /js/component.js
+[SH 2026/02/07 21:52:21 UTC 2026-02-07T13:52:21.977Z] info: GET /js/main.js
+[SH 2026/02/07 21:52:21 UTC 2026-02-07T13:52:21.977Z] info: GET /frame.js
+[SH 2026/02/07 21:52:21 UTC 2026-02-07T13:52:21.991Z] info: GET /js/bootstrap.bundle.min.js
+[SH 2026/02/07 21:52:21 UTC 2026-02-07T13:52:21.992Z] info: GET /js/aos.js
+[SH 2026/02/07 21:52:21 UTC 2026-02-07T13:52:21.994Z] info: GET /config.js
+[SH 2026/02/07 21:52:21 UTC 2026-02-07T13:52:21.994Z] info: GET /js/component.js
+[SH 2026/02/07 21:52:21 UTC 2026-02-07T13:52:21.995Z] info: GET /js/main.js
+[SH 2026/02/07 21:52:21 UTC 2026-02-07T13:52:21.995Z] info: GET /frame.js
+[SH 2026/02/07 21:52:22 UTC 2026-02-07T13:52:22.054Z] info: GET /home
+[SH 2026/02/07 21:52:22 UTC 2026-02-07T13:52:22.055Z] info: POST /api/pages/
+[SH 2026/02/07 21:52:22 UTC 2026-02-07T13:52:22.056Z] warn: File F:\code\minzhong_wall\longgaowall\longgaowall2\frontend\pages\.html not found. 没有找到F:\code\minzhong_wall\longgaowall\longgaowall2\frontend\pages\.html
+[SH 2026/02/07 21:52:22 UTC 2026-02-07T13:52:22.057Z] warn: File F:\code\minzhong_wall\longgaowall\longgaowall2\frontend\pages\.json not found. 没有找到F:\code\minzhong_wall\longgaowall\longgaowall2\frontend\pages\.json
+[SH 2026/02/07 21:52:22 UTC 2026-02-07T13:52:22.170Z] info: GET /css/bootstrap.min.css
+[SH 2026/02/07 21:52:22 UTC 2026-02-07T13:52:22.172Z] info: GET /css/aos.css
+[SH 2026/02/07 21:52:22 UTC 2026-02-07T13:52:22.173Z] info: GET /js/bootstrap.bundle.min.js
+[SH 2026/02/07 21:52:22 UTC 2026-02-07T13:52:22.173Z] info: GET /js/aos.js
+[SH 2026/02/07 21:52:22 UTC 2026-02-07T13:52:22.174Z] info: GET /css/main_style.css
+[SH 2026/02/07 21:52:22 UTC 2026-02-07T13:52:22.175Z] info: GET /css/component.css
+[SH 2026/02/07 21:52:22 UTC 2026-02-07T13:52:22.176Z] info: GET /config.js
+[SH 2026/02/07 21:52:22 UTC 2026-02-07T13:52:22.177Z] info: GET /js/component.js
+[SH 2026/02/07 21:52:22 UTC 2026-02-07T13:52:22.178Z] info: GET /js/main.js
+[SH 2026/02/07 21:52:22 UTC 2026-02-07T13:52:22.179Z] info: GET /frame.js
+[SH 2026/02/07 21:52:22 UTC 2026-02-07T13:52:22.203Z] info: POST /api/pages/home
+[SH 2026/02/07 21:52:22 UTC 2026-02-07T13:52:22.247Z] info: GET /js/home.js
+[SH 2026/02/07 21:52:22 UTC 2026-02-07T13:52:22.248Z] info: GET /js/bootstrap.bundle.min.js
+[SH 2026/02/07 21:52:22 UTC 2026-02-07T13:52:22.248Z] info: GET /js/aos.js
+[SH 2026/02/07 21:52:22 UTC 2026-02-07T13:52:22.249Z] info: GET /config.js
+[SH 2026/02/07 21:52:22 UTC 2026-02-07T13:52:22.249Z] info: GET /js/component.js
+[SH 2026/02/07 21:52:22 UTC 2026-02-07T13:52:22.249Z] info: GET /js/main.js
+[SH 2026/02/07 21:52:22 UTC 2026-02-07T13:52:22.250Z] info: GET /frame.js
+[SH 2026/02/07 21:52:22 UTC 2026-02-07T13:52:22.298Z] info: GET /css/home.css
+[SH 2026/02/07 21:52:22 UTC 2026-02-07T13:52:22.307Z] info: POST /api/navigation
+[SH 2026/02/07 21:52:22 UTC 2026-02-07T13:52:22.320Z] info: GET /img/menu.png
+[SH 2026/02/07 21:52:22 UTC 2026-02-07T13:52:22.321Z] info: GET /img/menu-fold.png
+[SH 2026/02/07 21:52:22 UTC 2026-02-07T13:52:22.371Z] info: POST /api/notice
+[SH 2026/02/07 21:52:22 UTC 2026-02-07T13:52:22.376Z] info: Proxying POST /notice to /notice
+[SH 2026/02/07 21:52:22 UTC 2026-02-07T13:52:22.396Z] info: POST /api/get_hot_messages
+[SH 2026/02/07 21:52:22 UTC 2026-02-07T13:52:22.398Z] info: Proxying POST /get_hot_messages to /get_hot_messages
+[SH 2026/02/07 21:52:22 UTC 2026-02-07T13:52:22.399Z] info: GET /favicon.ico
+[SH 2026/02/07 21:52:22 UTC 2026-02-07T13:52:22.402Z] error: Proxy error for /notice:
+[SH 2026/02/07 21:52:22 UTC 2026-02-07T13:52:22.404Z] error: Proxy error for /get_hot_messages:
+[SH 2026/02/07 21:52:22 UTC 2026-02-07T13:52:22.453Z] info: GET /js/home.js
+[SH 2026/02/07 21:52:24 UTC 2026-02-07T13:52:24.348Z] info: POST /api/pages/wall
+[SH 2026/02/07 21:52:24 UTC 2026-02-07T13:52:24.357Z] info: GET /js/wall.js
+[SH 2026/02/07 21:52:24 UTC 2026-02-07T13:52:24.358Z] info: GET /js/file.js
+[SH 2026/02/07 21:52:24 UTC 2026-02-07T13:52:24.376Z] info: GET /css/wall.css
+[SH 2026/02/07 21:52:24 UTC 2026-02-07T13:52:24.381Z] info: GET /js/wall.js
+[SH 2026/02/07 21:52:24 UTC 2026-02-07T13:52:24.381Z] info: GET /js/file.js
+[SH 2026/02/07 21:52:24 UTC 2026-02-07T13:52:24.386Z] info: POST /api/get_tags
+[SH 2026/02/07 21:52:24 UTC 2026-02-07T13:52:24.389Z] info: Proxying POST /get_tags to /get_tags
+[SH 2026/02/07 21:52:24 UTC 2026-02-07T13:52:24.391Z] info: GET /api/get_messages?s=newest&w=&f=all&start=0&end=18
+[SH 2026/02/07 21:52:24 UTC 2026-02-07T13:52:24.392Z] info: Proxying GET /get_messages?s=newest&w=&f=all&start=0&end=18 to /get_messages?s=newest&w=&f=all&start=0&end=18
+[SH 2026/02/07 21:52:24 UTC 2026-02-07T13:52:24.394Z] error: Proxy error for /get_tags:
+[SH 2026/02/07 21:52:24 UTC 2026-02-07T13:52:24.396Z] error: Proxy error for /get_messages?s=newest&w=&f=all&start=0&end=18:
+[SH 2026/02/07 21:52:27 UTC 2026-02-07T13:52:27.049Z] info: POST /api/pages/home
+[SH 2026/02/07 21:52:27 UTC 2026-02-07T13:52:27.073Z] info: GET /css/home.css
+[SH 2026/02/07 21:52:27 UTC 2026-02-07T13:52:27.087Z] info: POST /api/get_hot_messages
+[SH 2026/02/07 21:52:27 UTC 2026-02-07T13:52:27.089Z] info: Proxying POST /get_hot_messages to /get_hot_messages
+[SH 2026/02/07 21:52:27 UTC 2026-02-07T13:52:27.090Z] error: Proxy error for /get_hot_messages:
+[SH 2026/02/07 21:53:09 UTC 2026-02-07T13:53:09.991Z] info: GET /home
+[SH 2026/02/07 21:53:10 UTC 2026-02-07T13:53:10.030Z] info: GET /css/bootstrap.min.css
+[SH 2026/02/07 21:53:10 UTC 2026-02-07T13:53:10.035Z] info: GET /css/aos.css
+[SH 2026/02/07 21:53:10 UTC 2026-02-07T13:53:10.036Z] info: GET /js/bootstrap.bundle.min.js
+[SH 2026/02/07 21:53:10 UTC 2026-02-07T13:53:10.038Z] info: GET /css/main_style.css
+[SH 2026/02/07 21:53:10 UTC 2026-02-07T13:53:10.038Z] info: GET /css/component.css
+[SH 2026/02/07 21:53:10 UTC 2026-02-07T13:53:10.039Z] info: GET /js/aos.js
+[SH 2026/02/07 21:53:10 UTC 2026-02-07T13:53:10.039Z] info: GET /config.js
+[SH 2026/02/07 21:53:10 UTC 2026-02-07T13:53:10.040Z] info: GET /js/component.js
+[SH 2026/02/07 21:53:10 UTC 2026-02-07T13:53:10.041Z] info: GET /js/main.js
+[SH 2026/02/07 21:53:10 UTC 2026-02-07T13:53:10.042Z] info: GET /frame.js
+[SH 2026/02/07 21:53:10 UTC 2026-02-07T13:53:10.049Z] info: GET /js/bootstrap.bundle.min.js
+[SH 2026/02/07 21:53:10 UTC 2026-02-07T13:53:10.065Z] info: GET /js/aos.js
+[SH 2026/02/07 21:53:10 UTC 2026-02-07T13:53:10.067Z] info: POST /api/pages/home
+[SH 2026/02/07 21:53:10 UTC 2026-02-07T13:53:10.069Z] info: GET /config.js
+[SH 2026/02/07 21:53:10 UTC 2026-02-07T13:53:10.104Z] info: GET /js/home.js
+[SH 2026/02/07 21:53:10 UTC 2026-02-07T13:53:10.131Z] info: GET /css/home.css
+[SH 2026/02/07 21:53:10 UTC 2026-02-07T13:53:10.135Z] info: POST /api/navigation
+[SH 2026/02/07 21:53:10 UTC 2026-02-07T13:53:10.139Z] info: GET /img/menu.png
+[SH 2026/02/07 21:53:10 UTC 2026-02-07T13:53:10.142Z] info: GET /img/menu-fold.png
+[SH 2026/02/07 21:53:10 UTC 2026-02-07T13:53:10.144Z] info: POST /api/get_hot_messages
+[SH 2026/02/07 21:53:10 UTC 2026-02-07T13:53:10.146Z] info: Proxying POST /get_hot_messages to /get_hot_messages
+[SH 2026/02/07 21:53:10 UTC 2026-02-07T13:53:10.147Z] error: Proxy error for /get_hot_messages:
+[SH 2026/02/07 21:53:10 UTC 2026-02-07T13:53:10.276Z] info: GET /js/component.js
+[SH 2026/02/07 21:53:10 UTC 2026-02-07T13:53:10.278Z] info: GET /js/main.js
+[SH 2026/02/07 21:53:10 UTC 2026-02-07T13:53:10.279Z] info: GET /frame.js
+[SH 2026/02/07 21:53:10 UTC 2026-02-07T13:53:10.280Z] info: GET /js/home.js
+[SH 2026/02/07 21:53:13 UTC 2026-02-07T13:53:13.253Z] info: POST /api/notice
+[SH 2026/02/07 21:53:13 UTC 2026-02-07T13:53:13.255Z] info: Proxying POST /notice to /notice
+[SH 2026/02/07 21:53:13 UTC 2026-02-07T13:53:13.257Z] error: Proxy error for /notice:
+[SH 2026/02/07 21:53:23 UTC 2026-02-07T13:53:23.323Z] info: POST /api/pages/wall
+[SH 2026/02/07 21:53:23 UTC 2026-02-07T13:53:23.334Z] info: GET /js/wall.js
+[SH 2026/02/07 21:53:23 UTC 2026-02-07T13:53:23.336Z] info: GET /js/file.js
+[SH 2026/02/07 21:53:23 UTC 2026-02-07T13:53:23.347Z] info: GET /css/wall.css
+[SH 2026/02/07 21:53:23 UTC 2026-02-07T13:53:23.352Z] info: GET /js/wall.js
+[SH 2026/02/07 21:53:23 UTC 2026-02-07T13:53:23.357Z] info: POST /api/get_tags
+[SH 2026/02/07 21:53:23 UTC 2026-02-07T13:53:23.359Z] info: Proxying POST /get_tags to /get_tags
+[SH 2026/02/07 21:53:23 UTC 2026-02-07T13:53:23.360Z] info: GET /api/get_messages?s=newest&w=&f=all&start=0&end=18
+[SH 2026/02/07 21:53:23 UTC 2026-02-07T13:53:23.369Z] info: Proxying GET /get_messages?s=newest&w=&f=all&start=0&end=18 to /get_messages?s=newest&w=&f=all&start=0&end=18
+[SH 2026/02/07 21:53:23 UTC 2026-02-07T13:53:23.374Z] error: Proxy error for /get_tags:
+[SH 2026/02/07 21:53:23 UTC 2026-02-07T13:53:23.383Z] error: Proxy error for /get_messages?s=newest&w=&f=all&start=0&end=18:
+[SH 2026/02/07 21:53:23 UTC 2026-02-07T13:53:23.386Z] info: GET /js/file.js
+[SH 2026/02/07 21:54:56 UTC 2026-02-07T13:54:56.457Z] info: GET /wall
+[SH 2026/02/07 21:54:56 UTC 2026-02-07T13:54:56.512Z] info: GET /css/bootstrap.min.css
+[SH 2026/02/07 21:54:56 UTC 2026-02-07T13:54:56.514Z] info: GET /css/aos.css
+[SH 2026/02/07 21:54:56 UTC 2026-02-07T13:54:56.515Z] info: GET /js/bootstrap.bundle.min.js
+[SH 2026/02/07 21:54:56 UTC 2026-02-07T13:54:56.517Z] info: GET /css/main_style.css
+[SH 2026/02/07 21:54:56 UTC 2026-02-07T13:54:56.517Z] info: GET /js/aos.js
+[SH 2026/02/07 21:54:56 UTC 2026-02-07T13:54:56.518Z] info: GET /css/component.css
+[SH 2026/02/07 21:54:56 UTC 2026-02-07T13:54:56.518Z] info: GET /js/component.js
+[SH 2026/02/07 21:54:56 UTC 2026-02-07T13:54:56.519Z] info: GET /js/main.js
+[SH 2026/02/07 21:54:56 UTC 2026-02-07T13:54:56.520Z] info: GET /config.js
+[SH 2026/02/07 21:54:56 UTC 2026-02-07T13:54:56.521Z] info: GET /frame.js
+[SH 2026/02/07 21:54:56 UTC 2026-02-07T13:54:56.558Z] info: POST /api/pages/wall
+[SH 2026/02/07 21:54:56 UTC 2026-02-07T13:54:56.591Z] info: GET /js/wall.js
+[SH 2026/02/07 21:54:56 UTC 2026-02-07T13:54:56.594Z] info: GET /js/file.js
+[SH 2026/02/07 21:54:56 UTC 2026-02-07T13:54:56.606Z] info: GET /css/wall.css
+[SH 2026/02/07 21:54:56 UTC 2026-02-07T13:54:56.617Z] info: POST /api/navigation
+[SH 2026/02/07 21:54:56 UTC 2026-02-07T13:54:56.635Z] info: GET /img/menu.png
+[SH 2026/02/07 21:54:56 UTC 2026-02-07T13:54:56.639Z] info: GET /img/menu-fold.png
+[SH 2026/02/07 21:54:56 UTC 2026-02-07T13:54:56.639Z] info: POST /api/get_tags
+[SH 2026/02/07 21:54:56 UTC 2026-02-07T13:54:56.642Z] info: Proxying POST /get_tags to /get_tags
+[SH 2026/02/07 21:54:56 UTC 2026-02-07T13:54:56.645Z] info: GET /api/get_messages?s=newest&w=&f=all&start=0&end=18
+[SH 2026/02/07 21:54:56 UTC 2026-02-07T13:54:56.647Z] info: Proxying GET /get_messages?s=newest&w=&f=all&start=0&end=18 to /get_messages?s=newest&w=&f=all&start=0&end=18
+[SH 2026/02/07 21:54:58 UTC 2026-02-07T13:54:58.012Z] info: GET /wall
+[SH 2026/02/07 21:54:58 UTC 2026-02-07T13:54:58.055Z] info: GET /css/bootstrap.min.css
+[SH 2026/02/07 21:54:58 UTC 2026-02-07T13:54:58.057Z] info: GET /css/aos.css
+[SH 2026/02/07 21:54:58 UTC 2026-02-07T13:54:58.058Z] info: GET /js/bootstrap.bundle.min.js
+[SH 2026/02/07 21:54:58 UTC 2026-02-07T13:54:58.058Z] info: GET /css/main_style.css
+[SH 2026/02/07 21:54:58 UTC 2026-02-07T13:54:58.060Z] info: GET /js/aos.js
+[SH 2026/02/07 21:54:58 UTC 2026-02-07T13:54:58.062Z] info: GET /js/component.js
+[SH 2026/02/07 21:54:58 UTC 2026-02-07T13:54:58.062Z] info: GET /css/component.css
+[SH 2026/02/07 21:54:58 UTC 2026-02-07T13:54:58.063Z] info: GET /config.js
+[SH 2026/02/07 21:54:58 UTC 2026-02-07T13:54:58.063Z] info: GET /js/main.js
+[SH 2026/02/07 21:54:58 UTC 2026-02-07T13:54:58.065Z] info: GET /frame.js
+[SH 2026/02/07 21:54:58 UTC 2026-02-07T13:54:58.079Z] info: POST /api/pages/wall
+[SH 2026/02/07 21:54:58 UTC 2026-02-07T13:54:58.112Z] info: GET /js/bootstrap.bundle.min.js
+[SH 2026/02/07 21:54:58 UTC 2026-02-07T13:54:58.113Z] info: GET /js/aos.js
+[SH 2026/02/07 21:54:58 UTC 2026-02-07T13:54:58.114Z] info: GET /js/component.js
+[SH 2026/02/07 21:54:58 UTC 2026-02-07T13:54:58.122Z] info: GET /js/wall.js
+[SH 2026/02/07 21:54:58 UTC 2026-02-07T13:54:58.125Z] info: GET /js/file.js
+[SH 2026/02/07 21:54:58 UTC 2026-02-07T13:54:58.153Z] info: GET /css/wall.css
+[SH 2026/02/07 21:54:58 UTC 2026-02-07T13:54:58.157Z] info: POST /api/navigation
+[SH 2026/02/07 21:54:58 UTC 2026-02-07T13:54:58.162Z] info: GET /img/menu.png
+[SH 2026/02/07 21:54:58 UTC 2026-02-07T13:54:58.165Z] info: GET /img/menu-fold.png
+[SH 2026/02/07 21:54:58 UTC 2026-02-07T13:54:58.166Z] info: POST /api/get_tags
+[SH 2026/02/07 21:54:58 UTC 2026-02-07T13:54:58.167Z] info: Proxying POST /get_tags to /get_tags
+[SH 2026/02/07 21:54:58 UTC 2026-02-07T13:54:58.168Z] info: GET /api/get_messages?s=newest&w=&f=all&start=0&end=18
+[SH 2026/02/07 21:54:58 UTC 2026-02-07T13:54:58.169Z] info: Proxying GET /get_messages?s=newest&w=&f=all&start=0&end=18 to /get_messages?s=newest&w=&f=all&start=0&end=18
+[SH 2026/02/07 21:54:59 UTC 2026-02-07T13:54:59.312Z] info: GET /wall
+[SH 2026/02/07 21:54:59 UTC 2026-02-07T13:54:59.356Z] info: GET /css/bootstrap.min.css
+[SH 2026/02/07 21:54:59 UTC 2026-02-07T13:54:59.359Z] info: GET /css/aos.css
+[SH 2026/02/07 21:54:59 UTC 2026-02-07T13:54:59.359Z] info: GET /js/bootstrap.bundle.min.js
+[SH 2026/02/07 21:54:59 UTC 2026-02-07T13:54:59.360Z] info: GET /js/aos.js
+[SH 2026/02/07 21:54:59 UTC 2026-02-07T13:54:59.362Z] info: GET /config.js
+[SH 2026/02/07 21:54:59 UTC 2026-02-07T13:54:59.363Z] info: GET /css/main_style.css
+[SH 2026/02/07 21:54:59 UTC 2026-02-07T13:54:59.363Z] info: GET /css/component.css
+[SH 2026/02/07 21:54:59 UTC 2026-02-07T13:54:59.363Z] info: GET /js/component.js
+[SH 2026/02/07 21:54:59 UTC 2026-02-07T13:54:59.365Z] info: GET /js/main.js
+[SH 2026/02/07 21:54:59 UTC 2026-02-07T13:54:59.366Z] info: GET /frame.js
+[SH 2026/02/07 21:54:59 UTC 2026-02-07T13:54:59.386Z] info: POST /api/pages/wall
+[SH 2026/02/07 21:54:59 UTC 2026-02-07T13:54:59.428Z] info: GET /js/wall.js
+[SH 2026/02/07 21:54:59 UTC 2026-02-07T13:54:59.429Z] info: GET /js/file.js
+[SH 2026/02/07 21:54:59 UTC 2026-02-07T13:54:59.443Z] info: GET /css/wall.css
+[SH 2026/02/07 21:54:59 UTC 2026-02-07T13:54:59.450Z] info: POST /api/navigation
+[SH 2026/02/07 21:54:59 UTC 2026-02-07T13:54:59.463Z] info: GET /img/menu.png
+[SH 2026/02/07 21:54:59 UTC 2026-02-07T13:54:59.464Z] info: POST /api/get_tags
+[SH 2026/02/07 21:54:59 UTC 2026-02-07T13:54:59.464Z] info: Proxying POST /get_tags to /get_tags
+[SH 2026/02/07 21:54:59 UTC 2026-02-07T13:54:59.465Z] info: GET /img/menu-fold.png
+[SH 2026/02/07 21:54:59 UTC 2026-02-07T13:54:59.465Z] info: GET /api/get_messages?s=newest&w=&f=all&start=0&end=18
+[SH 2026/02/07 21:54:59 UTC 2026-02-07T13:54:59.467Z] info: Proxying GET /get_messages?s=newest&w=&f=all&start=0&end=18 to /get_messages?s=newest&w=&f=all&start=0&end=18
+[SH 2026/02/07 21:55:00 UTC 2026-02-07T13:55:00.811Z] info: GET /wall
+[SH 2026/02/07 21:55:00 UTC 2026-02-07T13:55:00.848Z] info: GET /css/bootstrap.min.css
+[SH 2026/02/07 21:55:00 UTC 2026-02-07T13:55:00.849Z] info: GET /css/aos.css
+[SH 2026/02/07 21:55:00 UTC 2026-02-07T13:55:00.850Z] info: GET /js/bootstrap.bundle.min.js
+[SH 2026/02/07 21:55:00 UTC 2026-02-07T13:55:00.851Z] info: GET /js/aos.js
+[SH 2026/02/07 21:55:00 UTC 2026-02-07T13:55:00.851Z] info: GET /css/main_style.css
+[SH 2026/02/07 21:55:00 UTC 2026-02-07T13:55:00.852Z] info: GET /config.js
+[SH 2026/02/07 21:55:00 UTC 2026-02-07T13:55:00.853Z] info: GET /css/component.css
+[SH 2026/02/07 21:55:00 UTC 2026-02-07T13:55:00.854Z] info: GET /js/component.js
+[SH 2026/02/07 21:55:00 UTC 2026-02-07T13:55:00.854Z] info: GET /js/main.js
+[SH 2026/02/07 21:55:00 UTC 2026-02-07T13:55:00.855Z] info: GET /frame.js
+[SH 2026/02/07 21:55:00 UTC 2026-02-07T13:55:00.875Z] info: POST /api/pages/wall
+[SH 2026/02/07 21:55:00 UTC 2026-02-07T13:55:00.907Z] info: GET /js/wall.js
+[SH 2026/02/07 21:55:00 UTC 2026-02-07T13:55:00.908Z] info: GET /js/file.js
+[SH 2026/02/07 21:55:00 UTC 2026-02-07T13:55:00.932Z] info: GET /css/wall.css
+[SH 2026/02/07 21:55:00 UTC 2026-02-07T13:55:00.937Z] info: POST /api/navigation
+[SH 2026/02/07 21:55:00 UTC 2026-02-07T13:55:00.950Z] info: GET /img/menu.png
+[SH 2026/02/07 21:55:00 UTC 2026-02-07T13:55:00.951Z] info: POST /api/get_tags
+[SH 2026/02/07 21:55:00 UTC 2026-02-07T13:55:00.952Z] info: Proxying POST /get_tags to /get_tags
+[SH 2026/02/07 21:55:00 UTC 2026-02-07T13:55:00.952Z] info: GET /img/menu-fold.png
+[SH 2026/02/07 21:55:00 UTC 2026-02-07T13:55:00.953Z] info: GET /api/get_messages?s=newest&w=&f=all&start=0&end=18
+[SH 2026/02/07 21:55:00 UTC 2026-02-07T13:55:00.954Z] info: Proxying GET /get_messages?s=newest&w=&f=all&start=0&end=18 to /get_messages?s=newest&w=&f=all&start=0&end=18
+[SH 2026/02/07 21:55:08 UTC 2026-02-07T13:55:08.790Z] info: POST /api/pages/home
+[SH 2026/02/07 21:55:08 UTC 2026-02-07T13:55:08.797Z] info: GET /js/home.js
+[SH 2026/02/07 21:55:08 UTC 2026-02-07T13:55:08.808Z] info: GET /css/home.css
+[SH 2026/02/07 21:55:08 UTC 2026-02-07T13:55:08.823Z] info: POST /api/get_hot_messages
+[SH 2026/02/07 21:55:08 UTC 2026-02-07T13:55:08.824Z] info: Proxying POST /get_hot_messages to /get_hot_messages
+[SH 2026/02/07 21:55:11 UTC 2026-02-07T13:55:11.953Z] info: POST /api/pages/wall
+[SH 2026/02/07 21:55:11 UTC 2026-02-07T13:55:11.972Z] info: GET /css/wall.css
+[SH 2026/02/07 21:55:11 UTC 2026-02-07T13:55:11.994Z] info: POST /api/get_tags
+[SH 2026/02/07 21:55:11 UTC 2026-02-07T13:55:11.998Z] info: Proxying POST /get_tags to /get_tags
+[SH 2026/02/07 22:35:09 UTC 2026-02-07T14:35:09.346Z] info: GET /wall
+[SH 2026/02/07 22:35:09 UTC 2026-02-07T14:35:09.403Z] info: GET /css/bootstrap.min.css
+[SH 2026/02/07 22:35:09 UTC 2026-02-07T14:35:09.405Z] info: GET /css/aos.css
+[SH 2026/02/07 22:35:09 UTC 2026-02-07T14:35:09.406Z] info: GET /js/bootstrap.bundle.min.js
+[SH 2026/02/07 22:35:09 UTC 2026-02-07T14:35:09.407Z] info: GET /css/main_style.css
+[SH 2026/02/07 22:35:09 UTC 2026-02-07T14:35:09.409Z] info: GET /js/aos.js
+[SH 2026/02/07 22:35:09 UTC 2026-02-07T14:35:09.410Z] info: GET /css/component.css
+[SH 2026/02/07 22:35:09 UTC 2026-02-07T14:35:09.412Z] info: GET /config.js
+[SH 2026/02/07 22:35:09 UTC 2026-02-07T14:35:09.414Z] info: GET /js/component.js
+[SH 2026/02/07 22:35:09 UTC 2026-02-07T14:35:09.415Z] info: GET /js/main.js
+[SH 2026/02/07 22:35:09 UTC 2026-02-07T14:35:09.415Z] info: GET /frame.js
+[SH 2026/02/07 22:35:09 UTC 2026-02-07T14:35:09.446Z] info: POST /api/pages/wall
+[SH 2026/02/07 22:35:09 UTC 2026-02-07T14:35:09.558Z] info: GET /js/wall.js
+[SH 2026/02/07 22:35:09 UTC 2026-02-07T14:35:09.559Z] info: GET /js/file.js
+[SH 2026/02/07 22:35:09 UTC 2026-02-07T14:35:09.598Z] info: GET /css/wall.css
+[SH 2026/02/07 22:35:09 UTC 2026-02-07T14:35:09.621Z] info: POST /api/navigation
+[SH 2026/02/07 22:35:09 UTC 2026-02-07T14:35:09.626Z] info: GET /img/menu.png
+[SH 2026/02/07 22:35:09 UTC 2026-02-07T14:35:09.630Z] info: GET /img/menu-fold.png
+[SH 2026/02/07 22:35:09 UTC 2026-02-07T14:35:09.631Z] info: POST /api/get_tags
+[SH 2026/02/07 22:35:09 UTC 2026-02-07T14:35:09.633Z] info: Proxying POST /get_tags to /get_tags
+[SH 2026/02/07 22:35:09 UTC 2026-02-07T14:35:09.635Z] info: GET /api/get_messages?s=newest&w=&f=all&start=0&end=18
+[SH 2026/02/07 22:35:09 UTC 2026-02-07T14:35:09.637Z] info: Proxying GET /get_messages?s=newest&w=&f=all&start=0&end=18 to /get_messages?s=newest&w=&f=all&start=0&end=18
+[SH 2026/02/07 22:35:11 UTC 2026-02-07T14:35:11.386Z] info: POST /api/pages/home
+[SH 2026/02/07 22:35:11 UTC 2026-02-07T14:35:11.394Z] info: GET /js/home.js
+[SH 2026/02/07 22:35:11 UTC 2026-02-07T14:35:11.403Z] info: GET /css/home.css
+[SH 2026/02/07 22:35:11 UTC 2026-02-07T14:35:11.424Z] info: POST /api/get_hot_messages
+[SH 2026/02/07 22:35:11 UTC 2026-02-07T14:35:11.426Z] info: Proxying POST /get_hot_messages to /get_hot_messages
+[SH 2026/02/07 22:35:11 UTC 2026-02-07T14:35:11.432Z] info: GET /js/home.js
+[SH 2026/02/07 22:35:41 UTC 2026-02-07T14:35:41.220Z] info: GET /home
+[SH 2026/02/07 22:35:41 UTC 2026-02-07T14:35:41.255Z] info: GET /css/bootstrap.min.css
+[SH 2026/02/07 22:35:41 UTC 2026-02-07T14:35:41.257Z] info: GET /css/aos.css
+[SH 2026/02/07 22:35:41 UTC 2026-02-07T14:35:41.258Z] info: GET /js/bootstrap.bundle.min.js
+[SH 2026/02/07 22:35:41 UTC 2026-02-07T14:35:41.259Z] info: GET /js/aos.js
+[SH 2026/02/07 22:35:41 UTC 2026-02-07T14:35:41.260Z] info: GET /css/component.css
+[SH 2026/02/07 22:35:41 UTC 2026-02-07T14:35:41.262Z] info: GET /config.js
+[SH 2026/02/07 22:35:41 UTC 2026-02-07T14:35:41.262Z] info: GET /css/main_style.css
+[SH 2026/02/07 22:35:41 UTC 2026-02-07T14:35:41.263Z] info: GET /js/component.js
+[SH 2026/02/07 22:35:41 UTC 2026-02-07T14:35:41.265Z] info: GET /js/main.js
+[SH 2026/02/07 22:35:41 UTC 2026-02-07T14:35:41.265Z] info: GET /frame.js
+[SH 2026/02/07 22:35:41 UTC 2026-02-07T14:35:41.267Z] info: GET /js/aos.js
+[SH 2026/02/07 22:35:41 UTC 2026-02-07T14:35:41.268Z] info: GET /js/bootstrap.bundle.min.js
+[SH 2026/02/07 22:35:41 UTC 2026-02-07T14:35:41.276Z] info: GET /config.js
+[SH 2026/02/07 22:35:41 UTC 2026-02-07T14:35:41.285Z] info: POST /api/pages/home
+[SH 2026/02/07 22:35:41 UTC 2026-02-07T14:35:41.326Z] info: GET /js/home.js
+[SH 2026/02/07 22:35:41 UTC 2026-02-07T14:35:41.346Z] info: GET /css/home.css
+[SH 2026/02/07 22:35:41 UTC 2026-02-07T14:35:41.363Z] info: POST /api/navigation
+[SH 2026/02/07 22:35:41 UTC 2026-02-07T14:35:41.368Z] info: GET /img/menu.png
+[SH 2026/02/07 22:35:41 UTC 2026-02-07T14:35:41.370Z] info: GET /img/menu-fold.png
+[SH 2026/02/07 22:35:41 UTC 2026-02-07T14:35:41.373Z] info: POST /api/get_hot_messages
+[SH 2026/02/07 22:35:41 UTC 2026-02-07T14:35:41.374Z] info: Proxying POST /get_hot_messages to /get_hot_messages
+[SH 2026/02/07 22:35:41 UTC 2026-02-07T14:35:41.484Z] info: GET /js/component.js
+[SH 2026/02/07 22:35:41 UTC 2026-02-07T14:35:41.484Z] info: GET /js/main.js
+[SH 2026/02/07 22:35:41 UTC 2026-02-07T14:35:41.485Z] info: GET /frame.js
+[SH 2026/02/07 22:35:41 UTC 2026-02-07T14:35:41.492Z] info: GET /js/home.js
+[SH 2026/02/07 22:35:49 UTC 2026-02-07T14:35:49.949Z] info: ---------------------------------------------------
+[SH 2026/02/07 22:35:49 UTC 2026-02-07T14:35:49.963Z] info: Server started at 2026/2/7 22:35:49
+[SH 2026/02/07 22:35:51 UTC 2026-02-07T14:35:51.544Z] info: GET /home
+[SH 2026/02/07 22:35:51 UTC 2026-02-07T14:35:51.587Z] info: GET /css/bootstrap.min.css
+[SH 2026/02/07 22:35:51 UTC 2026-02-07T14:35:51.589Z] info: GET /css/aos.css
+[SH 2026/02/07 22:35:51 UTC 2026-02-07T14:35:51.591Z] info: GET /css/main_style.css
+[SH 2026/02/07 22:35:51 UTC 2026-02-07T14:35:51.593Z] info: GET /js/bootstrap.bundle.min.js
+[SH 2026/02/07 22:35:51 UTC 2026-02-07T14:35:51.594Z] info: GET /js/aos.js
+[SH 2026/02/07 22:35:51 UTC 2026-02-07T14:35:51.596Z] info: GET /css/component.css
+[SH 2026/02/07 22:35:51 UTC 2026-02-07T14:35:51.596Z] info: GET /config.js
+[SH 2026/02/07 22:35:51 UTC 2026-02-07T14:35:51.600Z] info: GET /js/component.js
+[SH 2026/02/07 22:35:51 UTC 2026-02-07T14:35:51.602Z] info: GET /js/main.js
+[SH 2026/02/07 22:35:51 UTC 2026-02-07T14:35:51.602Z] info: GET /frame.js
+[SH 2026/02/07 22:35:51 UTC 2026-02-07T14:35:51.615Z] info: GET /js/bootstrap.bundle.min.js
+[SH 2026/02/07 22:35:51 UTC 2026-02-07T14:35:51.616Z] info: GET /js/aos.js
+[SH 2026/02/07 22:35:51 UTC 2026-02-07T14:35:51.617Z] info: GET /config.js
+[SH 2026/02/07 22:35:51 UTC 2026-02-07T14:35:51.632Z] info: GET /js/component.js
+[SH 2026/02/07 22:35:51 UTC 2026-02-07T14:35:51.633Z] info: POST /api/pages/home
+[SH 2026/02/07 22:35:51 UTC 2026-02-07T14:35:51.659Z] info: GET /js/home.js
+[SH 2026/02/07 22:35:51 UTC 2026-02-07T14:35:51.680Z] info: GET /css/home.css
+[SH 2026/02/07 22:35:51 UTC 2026-02-07T14:35:51.684Z] info: POST /api/navigation
+[SH 2026/02/07 22:35:51 UTC 2026-02-07T14:35:51.693Z] info: GET /img/menu.png
+[SH 2026/02/07 22:35:51 UTC 2026-02-07T14:35:51.695Z] info: GET /img/menu-fold.png
+[SH 2026/02/07 22:35:51 UTC 2026-02-07T14:35:51.713Z] info: POST /api/get_hot_messages
+[SH 2026/02/07 22:35:51 UTC 2026-02-07T14:35:51.719Z] info: Proxying POST /api/get_hot_messages to /api/get_hot_messages
+[SH 2026/02/07 22:35:51 UTC 2026-02-07T14:35:51.750Z] info: GET /api/static/tiny_files/38f791f0-be8f-4f4f-ae25-75ac953d21eb_7cdd98b25b20a88b54bba8520ae87d11.mp4
+[SH 2026/02/07 22:35:51 UTC 2026-02-07T14:35:51.752Z] info: Proxying GET /api/static/tiny_files/38f791f0-be8f-4f4f-ae25-75ac953d21eb_7cdd98b25b20a88b54bba8520ae87d11.mp4 to /api/static/tiny_files/38f791f0-be8f-4f4f-ae25-75ac953d21eb_7cdd98b25b20a88b54bba8520ae87d11.mp4
+[SH 2026/02/07 22:35:51 UTC 2026-02-07T14:35:51.752Z] info: GET /api/static/tiny_files/a21e75ee-b6e9-48b2-bed9-cdf833e6e54a_8e74fcbf18292be09aaa43821c0f6b04.mp4
+[SH 2026/02/07 22:35:51 UTC 2026-02-07T14:35:51.754Z] info: Proxying GET /api/static/tiny_files/a21e75ee-b6e9-48b2-bed9-cdf833e6e54a_8e74fcbf18292be09aaa43821c0f6b04.mp4 to /api/static/tiny_files/a21e75ee-b6e9-48b2-bed9-cdf833e6e54a_8e74fcbf18292be09aaa43821c0f6b04.mp4
+[SH 2026/02/07 22:35:51 UTC 2026-02-07T14:35:51.755Z] info: GET /api/static/tiny_files/1_70_ciallo.png
+[SH 2026/02/07 22:35:51 UTC 2026-02-07T14:35:51.756Z] info: Proxying GET /api/static/tiny_files/1_70_ciallo.png to /api/static/tiny_files/1_70_ciallo.png
+[SH 2026/02/07 22:35:51 UTC 2026-02-07T14:35:51.756Z] info: GET /api/static/tiny_files/084bfe3d-4661-4597-9221-895e3a0f1d22_20250822151513_1.jpg
+[SH 2026/02/07 22:35:51 UTC 2026-02-07T14:35:51.757Z] info: Proxying GET /api/static/tiny_files/084bfe3d-4661-4597-9221-895e3a0f1d22_20250822151513_1.jpg to /api/static/tiny_files/084bfe3d-4661-4597-9221-895e3a0f1d22_20250822151513_1.jpg
+[SH 2026/02/07 22:35:51 UTC 2026-02-07T14:35:51.758Z] info: GET /api/static/tiny_files/90ec8245-2a94-4b3e-ba67-422a522e7e40_avatar.jpg
+[SH 2026/02/07 22:35:51 UTC 2026-02-07T14:35:51.759Z] info: Proxying GET /api/static/tiny_files/90ec8245-2a94-4b3e-ba67-422a522e7e40_avatar.jpg to /api/static/tiny_files/90ec8245-2a94-4b3e-ba67-422a522e7e40_avatar.jpg
+[SH 2026/02/07 22:35:51 UTC 2026-02-07T14:35:51.762Z] info: GET /api/static/tiny_files/3b648778-eec6-477b-b47e-c71f19f41df3_Ciallo__.png
+[SH 2026/02/07 22:35:51 UTC 2026-02-07T14:35:51.765Z] info: Proxying GET /api/static/tiny_files/3b648778-eec6-477b-b47e-c71f19f41df3_Ciallo__.png to /api/static/tiny_files/3b648778-eec6-477b-b47e-c71f19f41df3_Ciallo__.png
+[SH 2026/02/07 22:35:51 UTC 2026-02-07T14:35:51.943Z] info: GET /api/static/tiny_files/d682e62c-f9fe-40ef-93c7-bc81d29ce4f0_huihui.jpg
+[SH 2026/02/07 22:35:51 UTC 2026-02-07T14:35:51.947Z] info: Proxying GET /api/static/tiny_files/d682e62c-f9fe-40ef-93c7-bc81d29ce4f0_huihui.jpg to /api/static/tiny_files/d682e62c-f9fe-40ef-93c7-bc81d29ce4f0_huihui.jpg
+[SH 2026/02/07 22:35:51 UTC 2026-02-07T14:35:51.970Z] info: GET /api/static/tiny_files/151691ce-c536-4305-adc6-bfb29d0ec567_SD002AA.png
+[SH 2026/02/07 22:35:51 UTC 2026-02-07T14:35:51.973Z] info: Proxying GET /api/static/tiny_files/151691ce-c536-4305-adc6-bfb29d0ec567_SD002AA.png to /api/static/tiny_files/151691ce-c536-4305-adc6-bfb29d0ec567_SD002AA.png
+[SH 2026/02/07 22:35:51 UTC 2026-02-07T14:35:51.975Z] info: GET /api/static/tiny_files/464f7663-585e-4152-ae76-1b5e0d22d3ef_ClassIn_20240907091925.jpg
+[SH 2026/02/07 22:35:51 UTC 2026-02-07T14:35:51.977Z] info: Proxying GET /api/static/tiny_files/464f7663-585e-4152-ae76-1b5e0d22d3ef_ClassIn_20240907091925.jpg to /api/static/tiny_files/464f7663-585e-4152-ae76-1b5e0d22d3ef_ClassIn_20240907091925.jpg
+[SH 2026/02/07 22:35:56 UTC 2026-02-07T14:35:56.465Z] info: POST /api/pages/wall
+[SH 2026/02/07 22:35:56 UTC 2026-02-07T14:35:56.487Z] info: GET /js/wall.js
+[SH 2026/02/07 22:35:56 UTC 2026-02-07T14:35:56.489Z] info: GET /js/file.js
+[SH 2026/02/07 22:35:56 UTC 2026-02-07T14:35:56.502Z] info: GET /css/wall.css
+[SH 2026/02/07 22:35:56 UTC 2026-02-07T14:35:56.517Z] info: POST /api/get_tags
+[SH 2026/02/07 22:35:56 UTC 2026-02-07T14:35:56.518Z] info: Proxying POST /api/get_tags to /api/get_tags
+[SH 2026/02/07 22:35:56 UTC 2026-02-07T14:35:56.520Z] info: GET /api/get_messages?s=newest&w=&f=all&start=0&end=18
+[SH 2026/02/07 22:35:56 UTC 2026-02-07T14:35:56.522Z] info: Proxying GET /api/get_messages?s=newest&w=&f=all&start=0&end=18 to /api/get_messages?s=newest&w=&f=all&start=0&end=18
+[SH 2026/02/07 22:35:56 UTC 2026-02-07T14:35:56.616Z] info: GET /api/static/tiny_files/id1_62b9abb1-5a2c-4ffb-99ca-48635f3df328_1768572596.3017926_avatar1_1.png
+[SH 2026/02/07 22:35:56 UTC 2026-02-07T14:35:56.624Z] info: Proxying GET /api/static/tiny_files/id1_62b9abb1-5a2c-4ffb-99ca-48635f3df328_1768572596.3017926_avatar1_1.png to /api/static/tiny_files/id1_62b9abb1-5a2c-4ffb-99ca-48635f3df328_1768572596.3017926_avatar1_1.png
+[SH 2026/02/07 22:35:58 UTC 2026-02-07T14:35:58.687Z] info: GET /api/static/files/38f791f0-be8f-4f4f-ae25-75ac953d21eb_7cdd98b25b20a88b54bba8520ae87d11.mp4
+[SH 2026/02/07 22:35:58 UTC 2026-02-07T14:35:58.688Z] info: Proxying GET /api/static/files/38f791f0-be8f-4f4f-ae25-75ac953d21eb_7cdd98b25b20a88b54bba8520ae87d11.mp4 to /api/static/files/38f791f0-be8f-4f4f-ae25-75ac953d21eb_7cdd98b25b20a88b54bba8520ae87d11.mp4
+[SH 2026/02/07 22:35:58 UTC 2026-02-07T14:35:58.832Z] info: GET /favicon.ico
+[SH 2026/02/07 22:36:00 UTC 2026-02-07T14:36:00.382Z] info: GET /api/static/files/a21e75ee-b6e9-48b2-bed9-cdf833e6e54a_8e74fcbf18292be09aaa43821c0f6b04.mp4
+[SH 2026/02/07 22:36:00 UTC 2026-02-07T14:36:00.383Z] info: Proxying GET /api/static/files/a21e75ee-b6e9-48b2-bed9-cdf833e6e54a_8e74fcbf18292be09aaa43821c0f6b04.mp4 to /api/static/files/a21e75ee-b6e9-48b2-bed9-cdf833e6e54a_8e74fcbf18292be09aaa43821c0f6b04.mp4
+[SH 2026/02/07 22:36:06 UTC 2026-02-07T14:36:06.885Z] info: GET /api/static/files/084bfe3d-4661-4597-9221-895e3a0f1d22_20250822151513_1.jpg
+[SH 2026/02/07 22:36:06 UTC 2026-02-07T14:36:06.887Z] info: Proxying GET /api/static/files/084bfe3d-4661-4597-9221-895e3a0f1d22_20250822151513_1.jpg to /api/static/files/084bfe3d-4661-4597-9221-895e3a0f1d22_20250822151513_1.jpg
+[SH 2026/02/07 22:36:10 UTC 2026-02-07T14:36:10.010Z] info: GET /api/static/files/90ec8245-2a94-4b3e-ba67-422a522e7e40_avatar.jpg
+[SH 2026/02/07 22:36:10 UTC 2026-02-07T14:36:10.011Z] info: Proxying GET /api/static/files/90ec8245-2a94-4b3e-ba67-422a522e7e40_avatar.jpg to /api/static/files/90ec8245-2a94-4b3e-ba67-422a522e7e40_avatar.jpg
+[SH 2026/02/07 22:36:11 UTC 2026-02-07T14:36:11.765Z] info: GET /api/static/files/3b648778-eec6-477b-b47e-c71f19f41df3_Ciallo__.png
+[SH 2026/02/07 22:36:11 UTC 2026-02-07T14:36:11.766Z] info: Proxying GET /api/static/files/3b648778-eec6-477b-b47e-c71f19f41df3_Ciallo__.png to /api/static/files/3b648778-eec6-477b-b47e-c71f19f41df3_Ciallo__.png
+[SH 2026/02/07 22:36:19 UTC 2026-02-07T14:36:19.398Z] info: GET /css/bootstrap.min.css
+[SH 2026/02/07 22:36:19 UTC 2026-02-07T14:36:19.400Z] info: GET /css/aos.css
+[SH 2026/02/07 22:36:19 UTC 2026-02-07T14:36:19.401Z] info: GET /css/component.css
+[SH 2026/02/07 22:36:19 UTC 2026-02-07T14:36:19.403Z] info: GET /css/main_style.css
+[SH 2026/02/07 22:36:19 UTC 2026-02-07T14:36:19.403Z] info: GET /css/wall.css
+[SH 2026/02/07 22:36:19 UTC 2026-02-07T14:36:19.552Z] info: GET /css/bootstrap.min.css.map
+[SH 2026/02/07 22:37:10 UTC 2026-02-07T14:37:10.191Z] info: GET /api/static/files/151691ce-c536-4305-adc6-bfb29d0ec567_SD002AA.png
+[SH 2026/02/07 22:37:10 UTC 2026-02-07T14:37:10.192Z] info: Proxying GET /api/static/files/151691ce-c536-4305-adc6-bfb29d0ec567_SD002AA.png to /api/static/files/151691ce-c536-4305-adc6-bfb29d0ec567_SD002AA.png
+[SH 2026/02/07 22:37:11 UTC 2026-02-07T14:37:11.905Z] info: GET /api/static/files/90ec8245-2a94-4b3e-ba67-422a522e7e40_avatar.jpg
+[SH 2026/02/07 22:37:11 UTC 2026-02-07T14:37:11.906Z] info: Proxying GET /api/static/files/90ec8245-2a94-4b3e-ba67-422a522e7e40_avatar.jpg to /api/static/files/90ec8245-2a94-4b3e-ba67-422a522e7e40_avatar.jpg
+[SH 2026/02/07 22:37:13 UTC 2026-02-07T14:37:13.910Z] info: GET /api/static/files/3b648778-eec6-477b-b47e-c71f19f41df3_Ciallo__.png
+[SH 2026/02/07 22:37:13 UTC 2026-02-07T14:37:13.911Z] info: Proxying GET /api/static/files/3b648778-eec6-477b-b47e-c71f19f41df3_Ciallo__.png to /api/static/files/3b648778-eec6-477b-b47e-c71f19f41df3_Ciallo__.png
+[SH 2026/02/07 22:37:17 UTC 2026-02-07T14:37:17.530Z] info: GET /api/static/files/d682e62c-f9fe-40ef-93c7-bc81d29ce4f0_huihui.jpg
+[SH 2026/02/07 22:37:17 UTC 2026-02-07T14:37:17.531Z] info: Proxying GET /api/static/files/d682e62c-f9fe-40ef-93c7-bc81d29ce4f0_huihui.jpg to /api/static/files/d682e62c-f9fe-40ef-93c7-bc81d29ce4f0_huihui.jpg
+[SH 2026/02/07 22:37:19 UTC 2026-02-07T14:37:19.494Z] info: POST /api/pages/home
+[SH 2026/02/07 22:37:19 UTC 2026-02-07T14:37:19.507Z] info: GET /css/home.css
+[SH 2026/02/07 22:37:19 UTC 2026-02-07T14:37:19.516Z] info: GET /img/menu.png
+[SH 2026/02/07 22:37:19 UTC 2026-02-07T14:37:19.519Z] info: GET /img/menu-fold.png
+[SH 2026/02/07 22:37:19 UTC 2026-02-07T14:37:19.522Z] info: POST /api/get_hot_messages
+[SH 2026/02/07 22:37:19 UTC 2026-02-07T14:37:19.523Z] info: Proxying POST /api/get_hot_messages to /api/get_hot_messages
+[SH 2026/02/07 22:37:19 UTC 2026-02-07T14:37:19.572Z] info: GET /api/static/tiny_files/38f791f0-be8f-4f4f-ae25-75ac953d21eb_7cdd98b25b20a88b54bba8520ae87d11.mp4
+[SH 2026/02/07 22:37:19 UTC 2026-02-07T14:37:19.574Z] info: Proxying GET /api/static/tiny_files/38f791f0-be8f-4f4f-ae25-75ac953d21eb_7cdd98b25b20a88b54bba8520ae87d11.mp4 to /api/static/tiny_files/38f791f0-be8f-4f4f-ae25-75ac953d21eb_7cdd98b25b20a88b54bba8520ae87d11.mp4
+[SH 2026/02/07 22:37:19 UTC 2026-02-07T14:37:19.575Z] info: GET /api/static/tiny_files/a21e75ee-b6e9-48b2-bed9-cdf833e6e54a_8e74fcbf18292be09aaa43821c0f6b04.mp4
+[SH 2026/02/07 22:37:19 UTC 2026-02-07T14:37:19.576Z] info: Proxying GET /api/static/tiny_files/a21e75ee-b6e9-48b2-bed9-cdf833e6e54a_8e74fcbf18292be09aaa43821c0f6b04.mp4 to /api/static/tiny_files/a21e75ee-b6e9-48b2-bed9-cdf833e6e54a_8e74fcbf18292be09aaa43821c0f6b04.mp4
+[SH 2026/02/07 22:37:19 UTC 2026-02-07T14:37:19.578Z] info: GET /api/static/tiny_files/1_70_ciallo.png
+[SH 2026/02/07 22:37:19 UTC 2026-02-07T14:37:19.580Z] info: Proxying GET /api/static/tiny_files/1_70_ciallo.png to /api/static/tiny_files/1_70_ciallo.png
+[SH 2026/02/07 22:37:19 UTC 2026-02-07T14:37:19.580Z] info: GET /api/static/tiny_files/084bfe3d-4661-4597-9221-895e3a0f1d22_20250822151513_1.jpg
+[SH 2026/02/07 22:37:19 UTC 2026-02-07T14:37:19.581Z] info: Proxying GET /api/static/tiny_files/084bfe3d-4661-4597-9221-895e3a0f1d22_20250822151513_1.jpg to /api/static/tiny_files/084bfe3d-4661-4597-9221-895e3a0f1d22_20250822151513_1.jpg
+[SH 2026/02/07 22:37:19 UTC 2026-02-07T14:37:19.582Z] info: GET /api/static/tiny_files/90ec8245-2a94-4b3e-ba67-422a522e7e40_avatar.jpg
+[SH 2026/02/07 22:37:19 UTC 2026-02-07T14:37:19.583Z] info: Proxying GET /api/static/tiny_files/90ec8245-2a94-4b3e-ba67-422a522e7e40_avatar.jpg to /api/static/tiny_files/90ec8245-2a94-4b3e-ba67-422a522e7e40_avatar.jpg
+[SH 2026/02/07 22:37:19 UTC 2026-02-07T14:37:19.584Z] info: GET /api/static/tiny_files/3b648778-eec6-477b-b47e-c71f19f41df3_Ciallo__.png
+[SH 2026/02/07 22:37:19 UTC 2026-02-07T14:37:19.584Z] info: Proxying GET /api/static/tiny_files/3b648778-eec6-477b-b47e-c71f19f41df3_Ciallo__.png to /api/static/tiny_files/3b648778-eec6-477b-b47e-c71f19f41df3_Ciallo__.png
+[SH 2026/02/07 22:37:19 UTC 2026-02-07T14:37:19.600Z] info: GET /api/static/tiny_files/d682e62c-f9fe-40ef-93c7-bc81d29ce4f0_huihui.jpg
+[SH 2026/02/07 22:37:19 UTC 2026-02-07T14:37:19.603Z] info: Proxying GET /api/static/tiny_files/d682e62c-f9fe-40ef-93c7-bc81d29ce4f0_huihui.jpg to /api/static/tiny_files/d682e62c-f9fe-40ef-93c7-bc81d29ce4f0_huihui.jpg
+[SH 2026/02/07 22:37:19 UTC 2026-02-07T14:37:19.605Z] info: GET /api/static/tiny_files/151691ce-c536-4305-adc6-bfb29d0ec567_SD002AA.png
+[SH 2026/02/07 22:37:19 UTC 2026-02-07T14:37:19.607Z] info: Proxying GET /api/static/tiny_files/151691ce-c536-4305-adc6-bfb29d0ec567_SD002AA.png to /api/static/tiny_files/151691ce-c536-4305-adc6-bfb29d0ec567_SD002AA.png
+[SH 2026/02/07 22:37:19 UTC 2026-02-07T14:37:19.613Z] info: GET /api/static/tiny_files/464f7663-585e-4152-ae76-1b5e0d22d3ef_ClassIn_20240907091925.jpg
+[SH 2026/02/07 22:37:19 UTC 2026-02-07T14:37:19.614Z] info: Proxying GET /api/static/tiny_files/464f7663-585e-4152-ae76-1b5e0d22d3ef_ClassIn_20240907091925.jpg to /api/static/tiny_files/464f7663-585e-4152-ae76-1b5e0d22d3ef_ClassIn_20240907091925.jpg
+[SH 2026/02/07 22:37:21 UTC 2026-02-07T14:37:21.110Z] info: POST /api/pages/wall
+[SH 2026/02/07 22:37:21 UTC 2026-02-07T14:37:21.127Z] info: GET /css/wall.css
+[SH 2026/02/07 22:37:21 UTC 2026-02-07T14:37:21.148Z] info: POST /api/get_tags
+[SH 2026/02/07 22:37:21 UTC 2026-02-07T14:37:21.149Z] info: Proxying POST /api/get_tags to /api/get_tags
+[SH 2026/02/07 22:37:25 UTC 2026-02-07T14:37:25.767Z] info: GET /wall
+[SH 2026/02/07 22:37:25 UTC 2026-02-07T14:37:25.812Z] info: GET /css/bootstrap.min.css
+[SH 2026/02/07 22:37:25 UTC 2026-02-07T14:37:25.812Z] info: GET /css/aos.css
+[SH 2026/02/07 22:37:25 UTC 2026-02-07T14:37:25.814Z] info: GET /js/bootstrap.bundle.min.js
+[SH 2026/02/07 22:37:25 UTC 2026-02-07T14:37:25.815Z] info: GET /js/aos.js
+[SH 2026/02/07 22:37:25 UTC 2026-02-07T14:37:25.815Z] info: GET /css/main_style.css
+[SH 2026/02/07 22:37:25 UTC 2026-02-07T14:37:25.817Z] info: GET /js/component.js
+[SH 2026/02/07 22:37:25 UTC 2026-02-07T14:37:25.818Z] info: GET /css/component.css
+[SH 2026/02/07 22:37:25 UTC 2026-02-07T14:37:25.818Z] info: GET /config.js
+[SH 2026/02/07 22:37:25 UTC 2026-02-07T14:37:25.819Z] info: GET /js/main.js
+[SH 2026/02/07 22:37:25 UTC 2026-02-07T14:37:25.820Z] info: GET /frame.js
+[SH 2026/02/07 22:37:25 UTC 2026-02-07T14:37:25.844Z] info: POST /api/pages/wall
+[SH 2026/02/07 22:37:25 UTC 2026-02-07T14:37:25.942Z] info: GET /js/wall.js
+[SH 2026/02/07 22:37:25 UTC 2026-02-07T14:37:25.943Z] info: GET /js/file.js
+[SH 2026/02/07 22:37:25 UTC 2026-02-07T14:37:25.971Z] info: GET /css/wall.css
+[SH 2026/02/07 22:37:25 UTC 2026-02-07T14:37:25.975Z] info: POST /api/navigation
+[SH 2026/02/07 22:37:25 UTC 2026-02-07T14:37:25.982Z] info: GET /img/menu.png
+[SH 2026/02/07 22:37:25 UTC 2026-02-07T14:37:25.983Z] info: GET /img/menu-fold.png
+[SH 2026/02/07 22:37:25 UTC 2026-02-07T14:37:25.986Z] info: POST /api/get_tags
+[SH 2026/02/07 22:37:25 UTC 2026-02-07T14:37:25.987Z] info: Proxying POST /api/get_tags to /api/get_tags
+[SH 2026/02/07 22:37:25 UTC 2026-02-07T14:37:25.989Z] info: GET /api/get_messages?s=newest&w=&f=all&start=0&end=18
+[SH 2026/02/07 22:37:25 UTC 2026-02-07T14:37:25.989Z] info: Proxying GET /api/get_messages?s=newest&w=&f=all&start=0&end=18 to /api/get_messages?s=newest&w=&f=all&start=0&end=18
+[SH 2026/02/07 22:37:26 UTC 2026-02-07T14:37:26.008Z] info: GET /api/static/tiny_files/a21e75ee-b6e9-48b2-bed9-cdf833e6e54a_8e74fcbf18292be09aaa43821c0f6b04.mp4
+[SH 2026/02/07 22:37:26 UTC 2026-02-07T14:37:26.009Z] info: Proxying GET /api/static/tiny_files/a21e75ee-b6e9-48b2-bed9-cdf833e6e54a_8e74fcbf18292be09aaa43821c0f6b04.mp4 to /api/static/tiny_files/a21e75ee-b6e9-48b2-bed9-cdf833e6e54a_8e74fcbf18292be09aaa43821c0f6b04.mp4
+[SH 2026/02/07 22:37:26 UTC 2026-02-07T14:37:26.024Z] info: GET /api/static/tiny_files/084bfe3d-4661-4597-9221-895e3a0f1d22_20250822151513_1.jpg
+[SH 2026/02/07 22:37:26 UTC 2026-02-07T14:37:26.026Z] info: Proxying GET /api/static/tiny_files/084bfe3d-4661-4597-9221-895e3a0f1d22_20250822151513_1.jpg to /api/static/tiny_files/084bfe3d-4661-4597-9221-895e3a0f1d22_20250822151513_1.jpg
+[SH 2026/02/07 22:37:26 UTC 2026-02-07T14:37:26.027Z] info: GET /api/static/tiny_files/90ec8245-2a94-4b3e-ba67-422a522e7e40_avatar.jpg
+[SH 2026/02/07 22:37:26 UTC 2026-02-07T14:37:26.028Z] info: Proxying GET /api/static/tiny_files/90ec8245-2a94-4b3e-ba67-422a522e7e40_avatar.jpg to /api/static/tiny_files/90ec8245-2a94-4b3e-ba67-422a522e7e40_avatar.jpg
+[SH 2026/02/07 22:37:26 UTC 2026-02-07T14:37:26.028Z] info: GET /api/static/tiny_files/3b648778-eec6-477b-b47e-c71f19f41df3_Ciallo__.png
+[SH 2026/02/07 22:37:26 UTC 2026-02-07T14:37:26.029Z] info: Proxying GET /api/static/tiny_files/3b648778-eec6-477b-b47e-c71f19f41df3_Ciallo__.png to /api/static/tiny_files/3b648778-eec6-477b-b47e-c71f19f41df3_Ciallo__.png
+[SH 2026/02/07 22:37:26 UTC 2026-02-07T14:37:26.030Z] info: GET /api/static/tiny_files/d682e62c-f9fe-40ef-93c7-bc81d29ce4f0_huihui.jpg
+[SH 2026/02/07 22:37:26 UTC 2026-02-07T14:37:26.033Z] info: Proxying GET /api/static/tiny_files/d682e62c-f9fe-40ef-93c7-bc81d29ce4f0_huihui.jpg to /api/static/tiny_files/d682e62c-f9fe-40ef-93c7-bc81d29ce4f0_huihui.jpg
+[SH 2026/02/07 22:37:26 UTC 2026-02-07T14:37:26.034Z] info: GET /api/static/tiny_files/151691ce-c536-4305-adc6-bfb29d0ec567_SD002AA.png
+[SH 2026/02/07 22:37:26 UTC 2026-02-07T14:37:26.035Z] info: Proxying GET /api/static/tiny_files/151691ce-c536-4305-adc6-bfb29d0ec567_SD002AA.png to /api/static/tiny_files/151691ce-c536-4305-adc6-bfb29d0ec567_SD002AA.png
+[SH 2026/02/07 22:37:26 UTC 2026-02-07T14:37:26.035Z] info: GET /api/static/tiny_files/464f7663-585e-4152-ae76-1b5e0d22d3ef_ClassIn_20240907091925.jpg
+[SH 2026/02/07 22:37:26 UTC 2026-02-07T14:37:26.036Z] info: Proxying GET /api/static/tiny_files/464f7663-585e-4152-ae76-1b5e0d22d3ef_ClassIn_20240907091925.jpg to /api/static/tiny_files/464f7663-585e-4152-ae76-1b5e0d22d3ef_ClassIn_20240907091925.jpg
+[SH 2026/02/07 22:37:26 UTC 2026-02-07T14:37:26.050Z] info: GET /api/static/tiny_files/1_70_ciallo.png
+[SH 2026/02/07 22:37:26 UTC 2026-02-07T14:37:26.052Z] info: Proxying GET /api/static/tiny_files/1_70_ciallo.png to /api/static/tiny_files/1_70_ciallo.png
+[SH 2026/02/07 22:37:26 UTC 2026-02-07T14:37:26.055Z] info: GET /api/static/tiny_files/id1_62b9abb1-5a2c-4ffb-99ca-48635f3df328_1768572596.3017926_avatar1_1.png
+[SH 2026/02/07 22:37:26 UTC 2026-02-07T14:37:26.056Z] info: Proxying GET /api/static/tiny_files/id1_62b9abb1-5a2c-4ffb-99ca-48635f3df328_1768572596.3017926_avatar1_1.png to /api/static/tiny_files/id1_62b9abb1-5a2c-4ffb-99ca-48635f3df328_1768572596.3017926_avatar1_1.png
+[SH 2026/02/07 22:37:27 UTC 2026-02-07T14:37:27.745Z] info: POST /api/pages/home
+[SH 2026/02/07 22:37:27 UTC 2026-02-07T14:37:27.755Z] info: GET /js/home.js
+[SH 2026/02/07 22:37:27 UTC 2026-02-07T14:37:27.768Z] info: GET /css/home.css
+[SH 2026/02/07 22:37:27 UTC 2026-02-07T14:37:27.789Z] info: POST /api/get_hot_messages
+[SH 2026/02/07 22:37:27 UTC 2026-02-07T14:37:27.791Z] info: Proxying POST /api/get_hot_messages to /api/get_hot_messages
+[SH 2026/02/07 22:37:27 UTC 2026-02-07T14:37:27.816Z] info: GET /api/static/tiny_files/a21e75ee-b6e9-48b2-bed9-cdf833e6e54a_8e74fcbf18292be09aaa43821c0f6b04.mp4
+[SH 2026/02/07 22:37:27 UTC 2026-02-07T14:37:27.817Z] info: Proxying GET /api/static/tiny_files/a21e75ee-b6e9-48b2-bed9-cdf833e6e54a_8e74fcbf18292be09aaa43821c0f6b04.mp4 to /api/static/tiny_files/a21e75ee-b6e9-48b2-bed9-cdf833e6e54a_8e74fcbf18292be09aaa43821c0f6b04.mp4
+[SH 2026/02/07 22:37:28 UTC 2026-02-07T14:37:28.503Z] info: POST /api/pages/wall
+[SH 2026/02/07 22:37:28 UTC 2026-02-07T14:37:28.515Z] info: GET /css/wall.css
+[SH 2026/02/07 22:37:28 UTC 2026-02-07T14:37:28.532Z] info: POST /api/get_tags
+[SH 2026/02/07 22:37:28 UTC 2026-02-07T14:37:28.533Z] info: Proxying POST /api/get_tags to /api/get_tags
+[SH 2026/02/07 22:37:28 UTC 2026-02-07T14:37:28.535Z] info: GET /api/get_messages?s=newest&w=&f=all&start=0&end=18
+[SH 2026/02/07 22:37:28 UTC 2026-02-07T14:37:28.536Z] info: Proxying GET /api/get_messages?s=newest&w=&f=all&start=0&end=18 to /api/get_messages?s=newest&w=&f=all&start=0&end=18
+[SH 2026/02/07 22:37:28 UTC 2026-02-07T14:37:28.549Z] info: GET /api/static/tiny_files/a21e75ee-b6e9-48b2-bed9-cdf833e6e54a_8e74fcbf18292be09aaa43821c0f6b04.mp4
+[SH 2026/02/07 22:37:28 UTC 2026-02-07T14:37:28.551Z] info: Proxying GET /api/static/tiny_files/a21e75ee-b6e9-48b2-bed9-cdf833e6e54a_8e74fcbf18292be09aaa43821c0f6b04.mp4 to /api/static/tiny_files/a21e75ee-b6e9-48b2-bed9-cdf833e6e54a_8e74fcbf18292be09aaa43821c0f6b04.mp4
+[SH 2026/02/07 22:37:30 UTC 2026-02-07T14:37:30.691Z] info: GET /api/get_messages?s=newest&w=&f=all&start=15&end=33
+[SH 2026/02/07 22:37:30 UTC 2026-02-07T14:37:30.693Z] info: Proxying GET /api/get_messages?s=newest&w=&f=all&start=15&end=33 to /api/get_messages?s=newest&w=&f=all&start=15&end=33
+[SH 2026/02/07 22:37:31 UTC 2026-02-07T14:37:31.718Z] info: GET /api/get_messages?s=newest&w=&f=all&start=15&end=33
+[SH 2026/02/07 22:37:31 UTC 2026-02-07T14:37:31.719Z] info: Proxying GET /api/get_messages?s=newest&w=&f=all&start=15&end=33 to /api/get_messages?s=newest&w=&f=all&start=15&end=33
+[SH 2026/02/07 22:37:33 UTC 2026-02-07T14:37:33.841Z] info: GET /api/get_messages?s=newest&w=&f=all&start=0&end=18
+[SH 2026/02/07 22:37:33 UTC 2026-02-07T14:37:33.842Z] info: Proxying GET /api/get_messages?s=newest&w=&f=all&start=0&end=18 to /api/get_messages?s=newest&w=&f=all&start=0&end=18
+[SH 2026/02/07 22:37:33 UTC 2026-02-07T14:37:33.858Z] info: GET /api/static/tiny_files/a21e75ee-b6e9-48b2-bed9-cdf833e6e54a_8e74fcbf18292be09aaa43821c0f6b04.mp4
+[SH 2026/02/07 22:37:33 UTC 2026-02-07T14:37:33.860Z] info: Proxying GET /api/static/tiny_files/a21e75ee-b6e9-48b2-bed9-cdf833e6e54a_8e74fcbf18292be09aaa43821c0f6b04.mp4 to /api/static/tiny_files/a21e75ee-b6e9-48b2-bed9-cdf833e6e54a_8e74fcbf18292be09aaa43821c0f6b04.mp4
+[SH 2026/02/07 22:37:36 UTC 2026-02-07T14:37:36.341Z] info: GET /api/get_messages?s=newest&w=&f=all&start=0&end=18
+[SH 2026/02/07 22:37:36 UTC 2026-02-07T14:37:36.342Z] info: Proxying GET /api/get_messages?s=newest&w=&f=all&start=0&end=18 to /api/get_messages?s=newest&w=&f=all&start=0&end=18
+[SH 2026/02/07 22:37:36 UTC 2026-02-07T14:37:36.354Z] info: GET /api/static/tiny_files/a21e75ee-b6e9-48b2-bed9-cdf833e6e54a_8e74fcbf18292be09aaa43821c0f6b04.mp4
+[SH 2026/02/07 22:37:36 UTC 2026-02-07T14:37:36.356Z] info: Proxying GET /api/static/tiny_files/a21e75ee-b6e9-48b2-bed9-cdf833e6e54a_8e74fcbf18292be09aaa43821c0f6b04.mp4 to /api/static/tiny_files/a21e75ee-b6e9-48b2-bed9-cdf833e6e54a_8e74fcbf18292be09aaa43821c0f6b04.mp4
+[SH 2026/02/07 22:37:36 UTC 2026-02-07T14:37:36.379Z] info: GET /api/static/tiny_files/084bfe3d-4661-4597-9221-895e3a0f1d22_20250822151513_1.jpg
+[SH 2026/02/07 22:37:36 UTC 2026-02-07T14:37:36.380Z] info: Proxying GET /api/static/tiny_files/084bfe3d-4661-4597-9221-895e3a0f1d22_20250822151513_1.jpg to /api/static/tiny_files/084bfe3d-4661-4597-9221-895e3a0f1d22_20250822151513_1.jpg
+[SH 2026/02/07 22:37:36 UTC 2026-02-07T14:37:36.382Z] info: GET /api/static/tiny_files/90ec8245-2a94-4b3e-ba67-422a522e7e40_avatar.jpg
+[SH 2026/02/07 22:37:36 UTC 2026-02-07T14:37:36.383Z] info: Proxying GET /api/static/tiny_files/90ec8245-2a94-4b3e-ba67-422a522e7e40_avatar.jpg to /api/static/tiny_files/90ec8245-2a94-4b3e-ba67-422a522e7e40_avatar.jpg
+[SH 2026/02/07 22:37:36 UTC 2026-02-07T14:37:36.384Z] info: GET /api/static/tiny_files/3b648778-eec6-477b-b47e-c71f19f41df3_Ciallo__.png
+[SH 2026/02/07 22:37:36 UTC 2026-02-07T14:37:36.385Z] info: Proxying GET /api/static/tiny_files/3b648778-eec6-477b-b47e-c71f19f41df3_Ciallo__.png to /api/static/tiny_files/3b648778-eec6-477b-b47e-c71f19f41df3_Ciallo__.png
+[SH 2026/02/07 22:37:36 UTC 2026-02-07T14:37:36.385Z] info: GET /api/static/tiny_files/d682e62c-f9fe-40ef-93c7-bc81d29ce4f0_huihui.jpg
+[SH 2026/02/07 22:37:36 UTC 2026-02-07T14:37:36.386Z] info: Proxying GET /api/static/tiny_files/d682e62c-f9fe-40ef-93c7-bc81d29ce4f0_huihui.jpg to /api/static/tiny_files/d682e62c-f9fe-40ef-93c7-bc81d29ce4f0_huihui.jpg
+[SH 2026/02/07 22:37:36 UTC 2026-02-07T14:37:36.386Z] info: GET /api/static/tiny_files/151691ce-c536-4305-adc6-bfb29d0ec567_SD002AA.png
+[SH 2026/02/07 22:37:36 UTC 2026-02-07T14:37:36.387Z] info: Proxying GET /api/static/tiny_files/151691ce-c536-4305-adc6-bfb29d0ec567_SD002AA.png to /api/static/tiny_files/151691ce-c536-4305-adc6-bfb29d0ec567_SD002AA.png
+[SH 2026/02/07 22:37:36 UTC 2026-02-07T14:37:36.389Z] info: GET /api/static/tiny_files/464f7663-585e-4152-ae76-1b5e0d22d3ef_ClassIn_20240907091925.jpg
+[SH 2026/02/07 22:37:36 UTC 2026-02-07T14:37:36.390Z] info: Proxying GET /api/static/tiny_files/464f7663-585e-4152-ae76-1b5e0d22d3ef_ClassIn_20240907091925.jpg to /api/static/tiny_files/464f7663-585e-4152-ae76-1b5e0d22d3ef_ClassIn_20240907091925.jpg
+[SH 2026/02/07 22:37:36 UTC 2026-02-07T14:37:36.405Z] info: GET /api/static/tiny_files/1_70_ciallo.png
+[SH 2026/02/07 22:37:36 UTC 2026-02-07T14:37:36.406Z] info: Proxying GET /api/static/tiny_files/1_70_ciallo.png to /api/static/tiny_files/1_70_ciallo.png
+[SH 2026/02/07 22:37:36 UTC 2026-02-07T14:37:36.408Z] info: GET /api/static/tiny_files/id1_62b9abb1-5a2c-4ffb-99ca-48635f3df328_1768572596.3017926_avatar1_1.png
+[SH 2026/02/07 22:37:36 UTC 2026-02-07T14:37:36.409Z] info: Proxying GET /api/static/tiny_files/id1_62b9abb1-5a2c-4ffb-99ca-48635f3df328_1768572596.3017926_avatar1_1.png to /api/static/tiny_files/id1_62b9abb1-5a2c-4ffb-99ca-48635f3df328_1768572596.3017926_avatar1_1.png
+[SH 2026/02/07 22:37:37 UTC 2026-02-07T14:37:37.485Z] info: GET /api/get_messages?s=newest&w=&f=all&start=0&end=18
+[SH 2026/02/07 22:37:37 UTC 2026-02-07T14:37:37.486Z] info: Proxying GET /api/get_messages?s=newest&w=&f=all&start=0&end=18 to /api/get_messages?s=newest&w=&f=all&start=0&end=18
+[SH 2026/02/07 22:37:37 UTC 2026-02-07T14:37:37.497Z] info: GET /api/static/tiny_files/a21e75ee-b6e9-48b2-bed9-cdf833e6e54a_8e74fcbf18292be09aaa43821c0f6b04.mp4
+[SH 2026/02/07 22:37:37 UTC 2026-02-07T14:37:37.499Z] info: Proxying GET /api/static/tiny_files/a21e75ee-b6e9-48b2-bed9-cdf833e6e54a_8e74fcbf18292be09aaa43821c0f6b04.mp4 to /api/static/tiny_files/a21e75ee-b6e9-48b2-bed9-cdf833e6e54a_8e74fcbf18292be09aaa43821c0f6b04.mp4
+[SH 2026/02/07 22:37:40 UTC 2026-02-07T14:37:40.352Z] info: GET /css/bootstrap.min.css
+[SH 2026/02/07 22:37:40 UTC 2026-02-07T14:37:40.354Z] info: GET /css/aos.css
+[SH 2026/02/07 22:37:40 UTC 2026-02-07T14:37:40.355Z] info: GET /css/main_style.css
+[SH 2026/02/07 22:37:40 UTC 2026-02-07T14:37:40.355Z] info: GET /css/component.css
+[SH 2026/02/07 22:37:40 UTC 2026-02-07T14:37:40.356Z] info: GET /css/wall.css
+[SH 2026/02/07 22:37:40 UTC 2026-02-07T14:37:40.576Z] info: GET /css/bootstrap.min.css.map
+[SH 2026/02/07 22:37:45 UTC 2026-02-07T14:37:45.552Z] info: GET /api/get_messages?s=newest&w=&f=all&start=0&end=18
+[SH 2026/02/07 22:37:45 UTC 2026-02-07T14:37:45.553Z] info: Proxying GET /api/get_messages?s=newest&w=&f=all&start=0&end=18 to /api/get_messages?s=newest&w=&f=all&start=0&end=18
+[SH 2026/02/07 22:37:45 UTC 2026-02-07T14:37:45.573Z] info: GET /api/static/tiny_files/38f791f0-be8f-4f4f-ae25-75ac953d21eb_7cdd98b25b20a88b54bba8520ae87d11.mp4
+[SH 2026/02/07 22:37:45 UTC 2026-02-07T14:37:45.574Z] info: Proxying GET /api/static/tiny_files/38f791f0-be8f-4f4f-ae25-75ac953d21eb_7cdd98b25b20a88b54bba8520ae87d11.mp4 to /api/static/tiny_files/38f791f0-be8f-4f4f-ae25-75ac953d21eb_7cdd98b25b20a88b54bba8520ae87d11.mp4
+[SH 2026/02/07 22:37:45 UTC 2026-02-07T14:37:45.579Z] info: GET /api/static/tiny_files/084bfe3d-4661-4597-9221-895e3a0f1d22_20250822151513_1.jpg
+[SH 2026/02/07 22:37:45 UTC 2026-02-07T14:37:45.580Z] info: Proxying GET /api/static/tiny_files/084bfe3d-4661-4597-9221-895e3a0f1d22_20250822151513_1.jpg to /api/static/tiny_files/084bfe3d-4661-4597-9221-895e3a0f1d22_20250822151513_1.jpg
+[SH 2026/02/07 22:37:45 UTC 2026-02-07T14:37:45.580Z] info: GET /api/static/tiny_files/90ec8245-2a94-4b3e-ba67-422a522e7e40_avatar.jpg
+[SH 2026/02/07 22:37:45 UTC 2026-02-07T14:37:45.581Z] info: Proxying GET /api/static/tiny_files/90ec8245-2a94-4b3e-ba67-422a522e7e40_avatar.jpg to /api/static/tiny_files/90ec8245-2a94-4b3e-ba67-422a522e7e40_avatar.jpg
+[SH 2026/02/07 22:37:45 UTC 2026-02-07T14:37:45.586Z] info: GET /api/static/tiny_files/3b648778-eec6-477b-b47e-c71f19f41df3_Ciallo__.png
+[SH 2026/02/07 22:37:45 UTC 2026-02-07T14:37:45.586Z] info: Proxying GET /api/static/tiny_files/3b648778-eec6-477b-b47e-c71f19f41df3_Ciallo__.png to /api/static/tiny_files/3b648778-eec6-477b-b47e-c71f19f41df3_Ciallo__.png
+[SH 2026/02/07 22:37:45 UTC 2026-02-07T14:37:45.587Z] info: GET /api/static/tiny_files/d682e62c-f9fe-40ef-93c7-bc81d29ce4f0_huihui.jpg
+[SH 2026/02/07 22:37:45 UTC 2026-02-07T14:37:45.588Z] info: Proxying GET /api/static/tiny_files/d682e62c-f9fe-40ef-93c7-bc81d29ce4f0_huihui.jpg to /api/static/tiny_files/d682e62c-f9fe-40ef-93c7-bc81d29ce4f0_huihui.jpg
+[SH 2026/02/07 22:37:45 UTC 2026-02-07T14:37:45.589Z] info: GET /api/static/tiny_files/151691ce-c536-4305-adc6-bfb29d0ec567_SD002AA.png
+[SH 2026/02/07 22:37:45 UTC 2026-02-07T14:37:45.590Z] info: Proxying GET /api/static/tiny_files/151691ce-c536-4305-adc6-bfb29d0ec567_SD002AA.png to /api/static/tiny_files/151691ce-c536-4305-adc6-bfb29d0ec567_SD002AA.png
+[SH 2026/02/07 22:37:45 UTC 2026-02-07T14:37:45.596Z] info: GET /api/static/tiny_files/464f7663-585e-4152-ae76-1b5e0d22d3ef_ClassIn_20240907091925.jpg
+[SH 2026/02/07 22:37:45 UTC 2026-02-07T14:37:45.597Z] info: Proxying GET /api/static/tiny_files/464f7663-585e-4152-ae76-1b5e0d22d3ef_ClassIn_20240907091925.jpg to /api/static/tiny_files/464f7663-585e-4152-ae76-1b5e0d22d3ef_ClassIn_20240907091925.jpg
+[SH 2026/02/07 22:37:45 UTC 2026-02-07T14:37:45.604Z] info: GET /api/static/tiny_files/1_70_ciallo.png
+[SH 2026/02/07 22:37:45 UTC 2026-02-07T14:37:45.605Z] info: Proxying GET /api/static/tiny_files/1_70_ciallo.png to /api/static/tiny_files/1_70_ciallo.png
+[SH 2026/02/07 22:37:45 UTC 2026-02-07T14:37:45.606Z] info: GET /api/static/tiny_files/a21e75ee-b6e9-48b2-bed9-cdf833e6e54a_8e74fcbf18292be09aaa43821c0f6b04.mp4
+[SH 2026/02/07 22:37:45 UTC 2026-02-07T14:37:45.607Z] info: Proxying GET /api/static/tiny_files/a21e75ee-b6e9-48b2-bed9-cdf833e6e54a_8e74fcbf18292be09aaa43821c0f6b04.mp4 to /api/static/tiny_files/a21e75ee-b6e9-48b2-bed9-cdf833e6e54a_8e74fcbf18292be09aaa43821c0f6b04.mp4
+[SH 2026/02/07 22:37:47 UTC 2026-02-07T14:37:47.661Z] info: GET /api/static/tiny_files/id1_62b9abb1-5a2c-4ffb-99ca-48635f3df328_1768572596.3017926_avatar1_1.png
+[SH 2026/02/07 22:37:47 UTC 2026-02-07T14:37:47.662Z] info: Proxying GET /api/static/tiny_files/id1_62b9abb1-5a2c-4ffb-99ca-48635f3df328_1768572596.3017926_avatar1_1.png to /api/static/tiny_files/id1_62b9abb1-5a2c-4ffb-99ca-48635f3df328_1768572596.3017926_avatar1_1.png
+[SH 2026/02/07 22:37:49 UTC 2026-02-07T14:37:49.270Z] info: POST /api/pages/home
+[SH 2026/02/07 22:37:49 UTC 2026-02-07T14:37:49.295Z] info: GET /css/home.css
+[SH 2026/02/07 22:37:49 UTC 2026-02-07T14:37:49.315Z] info: POST /api/get_hot_messages
+[SH 2026/02/07 22:37:49 UTC 2026-02-07T14:37:49.316Z] info: Proxying POST /api/get_hot_messages to /api/get_hot_messages
+[SH 2026/02/07 22:37:49 UTC 2026-02-07T14:37:49.320Z] info: GET /img/menu.png
+[SH 2026/02/07 22:37:49 UTC 2026-02-07T14:37:49.321Z] info: GET /img/menu-fold.png

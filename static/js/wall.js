@@ -48,7 +48,7 @@ async function restoreScrollState() {
         // 清除保存的状态（可选）
         sessionStorage.removeItem('wallScrollState');
     } catch (e) {
-        console.error('恢复滚动位置失败:', e);
+        console.error('restoreScrollState 恢复滚动位置失败:', e);
     }
     showToastCenter('', '已恢复至上次浏览位置');
 }
@@ -705,7 +705,7 @@ async function submitComment(messageId) {
             showToastBelow(`comment-form-${messageId}`, result.error || '评论失败，请稍后再试');
         }
     } catch (error) {
-        console.error('Error submitting comment:', error);
+        console.error('submitComment Error submitting comment:', error);
         showToastBelow(`comment-form-${messageId}`, '评论失败，请稍后再试');
     } finally {
         progressBarContainer.style.display = 'none';
@@ -916,12 +916,12 @@ function refreshMessage(id) {
                 const newMessageItem = createMessageElement(data.message);
                 messageItem.innerHTML = newMessageItem.innerHTML;
             } else {
-            console.error("Error refreshing message:", data)
+            console.error("refreshMessage: Error refreshing message:", data)
             showToastTopRight('', data.error || '刷新失败，请稍后再试', 'warning');
             }
         })
         .catch(error => {
-            console.error('Error refreshing message:', error);
+            console.error('refreshMessage: Error refreshing message:', error);
             showToastTopRight('', '刷新失败，请稍后再试', 'warning');
         })
         .finally(() => {
@@ -996,7 +996,7 @@ let partitions = [
 async function getTags() {
     const response = await fetch(`${apiUrl}/get_tags`, {method: 'POST'});
     if (!response.ok) {
-        console.log('Error:', response.status);
+        console.log('getTag Error:', response.status);
         return ;
     }
     const data = await response.json();
@@ -1214,7 +1214,7 @@ function renderContent() {
 export async function init() {
     console.log('wall.js init');
 
-    refreshMessages();
+
     showSuggestionTags();
     getTags();
     
@@ -1228,7 +1228,7 @@ export async function init() {
         }
     });
 
-    restoreScrollState
+    restoreScrollState();
 
     let scrollTimer;
     window.addEventListener('scroll', function() {
