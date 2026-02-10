@@ -52,3 +52,7 @@
 [SH 2026/02/08 21:09:29 UTC 2026-02-08T13:09:29.667Z] info: GET /js/main.js
 [SH 2026/02/08 21:09:29 UTC 2026-02-08T13:09:29.672Z] info: GET /frame.js
 [SH 2026/02/08 21:09:29 UTC 2026-02-08T13:09:29.674Z] info: GET /js/report.js
+[SH 2026/02/08 21:15:43 UTC 2026-02-08T13:15:43.205Z] info: GET /api/static/tiny_files/38f791f0-be8f-4f4f-ae25-75ac953d21eb_7cdd98b25b20a88b54bba8520ae87d11.mp4
+[SH 2026/02/08 21:15:43 UTC 2026-02-08T13:15:43.208Z] info: Proxying GET /api/static/tiny_files/38f791f0-be8f-4f4f-ae25-75ac953d21eb_7cdd98b25b20a88b54bba8520ae87d11.mp4 to /api/static/tiny_files/38f791f0-be8f-4f4f-ae25-75ac953d21eb_7cdd98b25b20a88b54bba8520ae87d11.mp4
+[SH 2026/02/08 21:15:43 UTC 2026-02-08T13:15:43.210Z] info: GET /api/static/tiny_files/a21e75ee-b6e9-48b2-bed9-cdf833e6e54a_8e74fcbf18292be09aaa43821c0f6b04.mp4
+[SH 2026/02/08 21:15:43 UTC 2026-02-08T13:15:43.211Z] info: Proxying GET /api/static/tiny_files/a21e75ee-b6e9-48b2-bed9-cdf833e6e54a_8e74fcbf18292be09aaa43821c0f6b04.mp4 to /api/static/tiny_files/a21e75ee-b6e9-48b2-bed9-cdf833e6e54a_8e74fcbf18292be09aaa43821c0f6b04.mp4

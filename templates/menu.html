@@ -5,7 +5,7 @@
                 <span class="theme-icon">🌙</span>
             </button>
         </h5>
-        <button type="button" class="btn-menu-close" data-bs-dismiss="offcanvas" aria-label="Close" style="background-color: transparent;">
+        <button type="button" class="btn-menu-close" data-bs-dismiss="offcanvas" aria-label="Close" style="background-color: transparent;" siderbar-toggle>
             <img src="/img/menu-fold.png" alt="关闭菜单" style="width:30px; height:30px; filter: invert(1);"></button>
     </div>
     <div class="offcanvas-body">
@@ -13,25 +13,25 @@
 
                 <ul class="list-unstyled">
                     <li class="sidebar-item">
-                        <a href="/" class="nav-link sidebar-link {homeActive}">
+                        <a href="/" class="nav-link sidebar-link" page="home">
                             <i class="bi bi-house-door me-3"></i>
                             <span>首页</span>
                         </a>
                     </li>
                     <li class="sidebar-item">
-                        <a href="/wall" class="nav-link sidebar-link {wallActive}">
+                        <a href="/wall" class="nav-link sidebar-link" page="wall">
                             <i class="bi bi-chat-square-text me-3"></i>
                             <span>校园墙</span>
                         </a>
                     </li>
                     <li class="sidebar-item">
-                        <a href="/apps" class="nav-link sidebar-link {appsActive}">
+                        <a href="/apps" class="nav-link sidebar-link" page="apps">
                             <i class="bi bi-chat-square-text me-3"></i>
                             <span>应用广场</span>
                         </a>
                     </li>
                     <li class="sidebar-item">
-                        <a href="/help" class="nav-link sidebar-link {helpActive}">
+                        <a href="/help" class="nav-link sidebar-link" page="help">
                             <i class="bi bi-question-circle me-3"></i>
                             <span>帮助</span>
                         </a>

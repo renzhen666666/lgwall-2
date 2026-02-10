@@ -1,9 +1,16 @@
 {
     "title": "wall",
-    "menu": {
-        "wallActive": "active"
-    },
-
     "scripts": ["wall.js", "file.js"],
-    "styles": ["wall.css"]
+    "styles": ["wall.css"],
+    "siderbar" : {
+        "display": true,
+        "template": "menu.html",
+        "page": "wall"
+    },
+    "navbar": {
+        "display": true,
+        "template": "nav.html",
+        "page": "wall",
+        "renderContent": true
+    }
 }

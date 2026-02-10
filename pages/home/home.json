@@ -1,11 +1,13 @@
 {
     "title": "龙华*高级中学校园墙 (゜-゜)つロ 干杯~",
-    "menu": {
-        "homeActive": "active"
-    },
+    "scripts": ["home.js"],
+    "styles": ["home.css"],
     "nav": {
         "nav": "<li class=\"nav-item\"><a class=\"nav-link\" href=\"/apps\">应用广场</a></li>"
     },
-    "styles" :["home.css"],
-    "scripts": ["home.js"]
+    "siderbar" : {
+        "display": true,
+        "template": "menu.html",
+        "page": "home"
+    }
 }

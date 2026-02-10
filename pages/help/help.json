@@ -1,4 +1,9 @@
 {
     "title": "帮助",
-    "styles": ["help.css"]
+    "styles": ["help.css"],
+    "siderbar": {
+        "display": true,
+        "template": "menu.html",
+        "page": "help"
+    }
 }

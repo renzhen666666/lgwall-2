@@ -1,5 +1,10 @@
 {
     "title": "app",
     "styles": ["apps.css"],
-    "scripts": ["apps.js"]
+    "scripts": ["apps.js"],
+    "siderbar" : {
+        "display": true,
+        "template": "menu.html",
+        "page": "apps"
+    }
 }
